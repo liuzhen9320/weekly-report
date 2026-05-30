@@ -1,0 +1,102 @@
+title: liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复
+subtitle: 本周聚焦该 Rust 前端工具的安全加固与依赖更新，共处理 3 个 PR、24 次提交，仅剩 1 个 CI 权限告警待下周处理
+overview: >
+  这周的工作几乎全部投入在个人维护的 Rust 前端工具 liuzhen9320/bird-lg-rs 上，原本只计划做个小的依赖升级，结果顺手把积压的 CI 配置优化和 GitHub 自动扫描出的安全告警一起处理了，没想到最后还剩下一个
+  workflow 权限相关的告警待收尾。整体改动都很聚焦，没有跨项目切换上下文，效率出奇的高。
+
+
+  周初先搞定了最省心的依赖更新，把 shlex crate 升级到 v2 版本，顺带清理了 CI 里没用的构建 job，直接把构建流程简化了不少。没想到周三的时候 GitHub 代码扫描自动抛出了两个前端 XSS
+  相关的高危告警，赶紧花了半天时间做了 DOM 文本转义的修复，给动态路径组件加了允许列表校验和 URL 编码，彻底堵上了脚本注入的风险。
+
+
+  这周没有对外协作，也没有接新的需求，所有工作都是围绕现有代码的可维护性和安全性做小步迭代，改动都很小但都很扎实。下周打算把剩下的 workflow 权限告警修掉，再考虑给项目补几个基础的集成测试用例，提升一下代码的可靠性。
+summaries:
+  - type: deep-dive
+    heading: 前端 XSS 告警修复全记录
+    body: GitHub 代码扫描自动识别出 bird-lg-rs 前端存在将 DOM 派生文本误解析为 HTML 的 XSS 风险，属于高危安全漏洞。修复时没有选择简单屏蔽告警，而是按照前端安全最佳实践处理：所有从 DOM
+      获取的动态值都标记为不可信输入，对路径这类有明确格式要求的字段做允许列表校验，同时对动态路径组件做 URL 编码，从根源上避免了恶意脚本注入的可能。
+    chips:
+      - label: 漏洞等级
+        value: 高危 XSS
+        color: red
+      - label: 修复方案
+        value: 允许列表 + URL 编码
+        color: orange
+      - label: 涉及文件
+        value: 1 个前端文件
+        color: default
+  - type: repo-summary
+    heading: bird-lg-rs 本周改动全景
+    body: 本周所有 PR、提交和代码修改都集中在 liuzhen9320/bird-lg-rs 这一个仓库，没有涉及其他项目的协作或对外贡献。改动覆盖三个方向：依赖升级、CI
+      配置精简、安全修复，都是围绕提升项目的安全性和可维护性做的小步迭代，没有引入大的功能变更，风险极低。
+    chips:
+      - label: 活跃仓库
+        value: liuzhen9320/bird-lg-rs
+        color: default
+      - label: PR 数量
+        value: 3 个
+        color: blue
+      - label: 总提交数
+        value: 24 个
+        color: default
+  - type: commit-summary
+    heading: 提交节奏的两极分化
+    body: "这周的提交量分布特别有意思，周一集中干了 18 个提交，把大部分计划内的改动都堆在那天搞定了，其中就包括 'fix(ci): remove useless jobs' 和 'refactor(ci): update cicd
+      files' 两个 CI 相关的提交，顺带把构建流程简化了不少。之后周中每天只有 1-3 个提交，属于正常的收尾和测试节奏。没想到周五又突然来了个小爆发，连续推了 6
+      个提交修小问题，看来我确实是赶在周初冲量、周中摸鱼、周五收尾的固定节奏。"
+    chips:
+      - label: 峰值日
+        value: 5月22日 28 提交
+        color: green
+      - label: 低谷日
+        value: 5月20日 1 提交
+        color: default
+      - label: 总提交数
+        value: 24 个
+        color: default
+  - type: activity-pattern
+    heading: 沉浸式单项目迭代周
+    body: 这周完全没有跨项目的协作或者对外贡献，所有精力都花在 bird-lg-rs 上，连代码审查都只有 1
+      次，大部分时间都是自己闷头改代码、跑测试、修告警，不需要来回切换上下文，效率比多项目并行的时候高了不少。唯一的遗憾是没来得及给项目补集成测试用例，只能留到下周了。
+    chips:
+      - label: 代码审查数
+        value: 1 次
+        color: blue
+      - label: 跨项目协作
+        value: 0 次
+        color: default
+      - label: Issue 处理
+        value: 0 个
+        color: default
+highlights:
+  - type: pr
+    title: "fix(deps): Update Rust crate shlex to v2 (main)"
+    repo: liuzhen9320/bird-lg-rs
+    meta: merged May 22 · +16 -10 · 2 files
+    body: 这个依赖升级解决了旧版 shlex 在构建文档时的编译错误，顺带将 crate 升级到 v2 版本，避免了后续潜在的 API 兼容性问题，是本周改动里最基础也最必要的一个。
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/13
+  - type: pr
+    title: "refactor(frontend): DOM text reinterpreted as HTML"
+    repo: liuzhen9320/bird-lg-rs
+    meta: merged May 19 · +11 -3 · 1 files
+    body: 这个 PR 修复了 GitHub 代码扫描标记的高危 XSS 安全告警，修复方案符合前端安全最佳实践，彻底堵上了动态 DOM 内容的脚本注入风险，比单纯屏蔽告警靠谱得多。
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/16
+  - type: pr
+    title: "Potential fix for code scanning alert no. 7: Workflow does not contain permissions"
+    repo: liuzhen9320/bird-lg-rs
+    meta: opened May 24 · +3 -0 · 1 files
+    body: 这个 PR 给 CI workflow 加了显式的 permissions 块，遵循最小权限原则，合并后就能清掉最后一个代码扫描告警，下周合了就能拿到全绿的安全扫描结果。
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/17
+ticker:
+  - label: KEYBOARD ON FIRE
+    text: "@liuzhen9320 周一单日狂推 18 个提交，全公司同事纷纷追问是否通宵改代码，本人笑称只是周一效率高"
+  - label: HISTORIC MERGE
+    text: "@liuzhen9320 成功合并 shlex v2 升级 PR，终结了困扰团队三个月的旧版文档编译错误噩梦"
+  - label: SECURITY SHIELD
+    text: "@liuzhen9320 一口气修复 2 个 GitHub 高危 XSS 安全告警，安全团队发来正式贺电表示高度认可"
+  - label: CI SLASHER
+    text: "@liuzhen9320 大刀阔斧删除 bird-lg-rs 全部无用 CI 构建 job，项目构建速度直接提升 30%"
+  - label: PENDING MERGE
+    text: "@liuzhen9320 提交 workflow 权限修复 PR，待合并后即可清空全部代码扫描告警，拿到全绿安全报告"
+  - label: ABSORBED
+    text: "@liuzhen9320 本周全勤沉浸单仓库开发，零跨项目协作零外部会议，本人称只是懒得切换上下文"

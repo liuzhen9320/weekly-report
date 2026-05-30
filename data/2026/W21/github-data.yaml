@@ -1,0 +1,115 @@
+username: liuzhen9320
+avatarUrl: https://avatars.githubusercontent.com/u/141824471?u=f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&v=4
+profile:
+  name: liuzhen932 🇦🇶
+  bio: 只要愿意去做，人无所不通。
+  company: null
+  location: Antarctica
+  followers: 32
+  following: 27
+  publicRepos: 51
+dateRange:
+  from: 2026-05-18
+  to: 2026-05-24
+stats:
+  totalCommits: 24
+  totalAdditions: 30
+  totalDeletions: 13
+  prsOpened: 2
+  prsMerged: 1
+  prsReviewed: 1
+  issuesOpened: 0
+  issuesClosed: 0
+dailyCommits:
+  - date: 2026-05-18
+    count: 18
+  - date: 2026-05-19
+    count: 3
+  - date: 2026-05-20
+    count: 1
+  - date: 2026-05-21
+    count: 3
+  - date: 2026-05-22
+    count: 28
+  - date: 2026-05-23
+    count: 5
+  - date: 2026-05-24
+    count: 6
+repositories:
+  - name: liuzhen9320/bird-lg-rs
+    commits: 0
+    prsOpened: 3
+    prsMerged: 2
+    issuesOpened: 0
+    issuesClosed: 0
+    url: https://github.com/liuzhen9320/bird-lg-rs
+pullRequests:
+  - title: "Potential fix for code scanning alert no. 7: Workflow does not contain permissions"
+    body: |-
+      Potential fix for [https://github.com/liuzhen9320/bird-lg-rs/security/code-scanning/7](https://github.com/liuzhen9320/bird-lg-rs/security/code-scanning/7)
+
+      Add an explicit `permissions` block at the workflow root in `.github/workflows/pr.yml` so all jobs (including `build`) default to least privileg...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/17
+    repository: liuzhen9320/bird-lg-rs
+    state: open
+    labels: []
+    additions: 3
+    deletions: 0
+    changedFiles: 1
+    author: liuzhen9320
+    createdAt: 2026-05-22T08:38:44Z
+    mergedAt: null
+  - title: "fix(deps): Update Rust crate shlex to v2 (main)"
+    body: |-
+      This PR contains the following updates:
+
+      ---
+
+      ### Release Notes
+
+      <details>
+      <summary>comex/rust-shlex (shlex)</summary>
+
+      ### [`v2.0.1`](https://redirect.github.com/comex/rust-shlex/blob/HEAD/CHANGELOG.md#201)
+
+      - Fixes a compile error when building the documentation.
+
+      ### [`v2.0.0`](https://redirect.g...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/13
+    repository: liuzhen9320/bird-lg-rs
+    state: merged
+    labels:
+      - dependencies
+      - major
+      - version-update
+    additions: 16
+    deletions: 10
+    changedFiles: 2
+    author: renovate[bot]
+    createdAt: 2026-05-20T01:45:00Z
+    mergedAt: 2026-05-22T08:01:47Z
+  - title: "refactor(frontend): DOM text reinterpreted as HTML"
+    body: |-
+      Potential fix for [https://github.com/liuzhen9320/bird-lg-rs/security/code-scanning/6](https://github.com/liuzhen9320/bird-lg-rs/security/code-scanning/6)
+
+      Best-practice fix: treat all DOM-derived values as untrusted, validate constrained fields against allowlists, and URL-encode dynamic path compon...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/16
+    repository: liuzhen9320/bird-lg-rs
+    state: merged
+    labels: []
+    additions: 11
+    deletions: 3
+    changedFiles: 1
+    author: liuzhen9320
+    createdAt: 2026-05-22T08:31:55Z
+    mergedAt: 2026-05-22T08:43:31Z
+issues: []
+events: []
+commitMessages:
+  - repo: liuzhen9320/bird-lg-rs
+    messages:
+      - "refactor(frontend): DOM text reinterpreted as HTML (#16)"
+      - "fix(ci): remove useless jobs"
+      - "refactor(ci): update cicd files"
+releases: []
+externalContributions: []
