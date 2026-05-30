@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <title>liuzhen9320 Develop News</title>
+  <title>新增功能整合 - 2026-03-23 - 2026-03-29</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Weekly reports by @liuzhen9320" />
-  <meta name="view-transition" content="same-origin" />
-  <meta property="og:title" content="liuzhen9320 Develop News" />
-  <meta property="og:description" content="Weekly reports by @liuzhen9320" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/og.png" />
+  <meta name="description" content="简化数据验证" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta property="og:title" content="新增功能整合" />
+  <meta property="og:description" content="简化数据验证" />
+  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W13/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W13/" />
+  <meta property="og:site_name" content="liuzhen9320 Weekly Reports" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="liuzhen9320 Develop News" />
-  <meta name="twitter:description" content="Weekly reports by @liuzhen9320" />
-  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/og.png" />
+  <meta name="twitter:title" content="新增功能整合" />
+  <meta name="twitter:description" content="简化数据验证" />
+  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W13/og.png" />
+  <meta name="author" content="liuzhen9320" />
+  <meta name="theme-color" content="#050505" />
+  <meta property="article:published_time" content="2026-03-29" />
+  <meta property="article:author" content="https://github.com/liuzhen9320" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/141824471?u&#x3D;f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&amp;v&#x3D;4" />
+  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W13/" />
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://liuzhen9320.github.io/weekly-report/feed.xml" />
+  <meta name="view-transition" content="same-origin" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "新增功能整合",
+    "description": "简化数据验证",
+    "author": {
+      "@type": "Person",
+      "name": "liuzhen9320",
+      "url": "https://github.com/liuzhen9320"
+    },
+    "image": "https://liuzhen9320.github.io/weekly-report/2026/W13/og.png",
+    "datePublished": "2026-03-29"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://liuzhen9320.github.io/weekly-report/" },
+      { "@type": "ListItem", "position": 2, "name": "2026-03-23 - 2026-03-29", "item": "https://liuzhen9320.github.io/weekly-report/2026/W13/" }
+    ]
+  }
+  </script>
   <style>
     
   :root { 
@@ -537,298 +571,6 @@
       .highlight-grid { grid-template-columns: 1fr; }
     }
   </style>
-  <style>
-    body { background: var(--b-bg); color: var(--b-text); overflow-x: hidden; }
-
-    /* GRAIN OVERLAY */
-    body::after {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 9999;
-      opacity: var(--b-grain-opacity);
-    }
-
-    /* NAV */
-    .index-nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 100;
-      background: var(--b-nav-bg);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--b-border);
-    }
-    .index-nav-inner {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0.75rem 3rem;
-      display: flex;
-      align-items: center;
-      min-height: 56px;
-    }
-    .nav-site-title {
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--b-nav-title);
-      white-space: nowrap;
-    }
-
-    /* HERO */
-    .hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0 3rem 6rem;
-      overflow: hidden;
-    }
-
-    /* GEOMETRIC DECORATIONS */
-    .geo-circle {
-      position: absolute;
-      border-radius: 50%;
-      border: 1px solid var(--b-border-subtle);
-    }
-    .geo-circle-1 { width: 600px; height: 600px; top: -200px; right: -100px; }
-    .geo-circle-2 { width: 400px; height: 400px; top: 10%; left: -150px; border-color: color-mix(in srgb, var(--b-accent) 8%, transparent); }
-    .geo-circle-3 { width: 200px; height: 200px; bottom: 20%; right: 10%; background: color-mix(in srgb, var(--b-accent) 3%, transparent); }
-    .geo-line {
-      position: absolute;
-      background: var(--b-border-subtle);
-    }
-    .geo-line-1 { width: 1px; height: 100%; top: 0; left: 33.33%; }
-    .geo-line-2 { width: 1px; height: 100%; top: 0; left: 66.66%; }
-    .geo-dot {
-      position: absolute;
-      width: 4px; height: 4px;
-      border-radius: 50%;
-      background: color-mix(in srgb, var(--b-accent) 25%, transparent);
-    }
-    .geo-dot-1 { top: 30%; left: 33.33%; }
-    .geo-dot-2 { top: 60%; left: 66.66%; }
-    .geo-dot-3 { top: 45%; right: 15%; }
-
-    .hero-inner {
-      max-width: 960px;
-      margin: 0 auto;
-      width: 100%;
-      position: relative;
-      z-index: 1;
-    }
-
-    /* AVATAR */
-    .hero-avatar-wrap {
-      position: absolute;
-      top: 25vh;
-      right: 3rem;
-      z-index: 2;
-    }
-    .hero-avatar {
-      width: 180px; height: 180px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      background-image: linear-gradient(var(--b-bg), var(--b-bg)), linear-gradient(135deg, var(--b-accent), #8957e5, #f78166);
-      background-origin: border-box;
-      background-clip: padding-box, border-box;
-      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .hero-avatar-wrap:hover .hero-avatar {
-      transform: scale(1.08) rotate(3deg);
-    }
-
-    /* MASSIVE TITLE */
-    .hero-title {
-      font-size: clamp(4rem, 12vw, 9rem);
-      font-weight: 900;
-      letter-spacing: -0.06em;
-      line-height: 0.85;
-      color: var(--b-heading);
-      margin-bottom: 3rem;
-      max-width: 70%;
-      white-space: pre-line;
-    }
-
-    /* PROFILE */
-    .hero-profile {
-      display: inline-flex;
-      align-items: flex-start;
-      gap: 4rem;
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .hero-profile:hover .hero-display-name {
-      color: var(--b-accent);
-    }
-    .hero-name-block {}
-    .hero-display-name {
-      font-size: 1.5rem;
-      font-weight: 300;
-      letter-spacing: 0.05em;
-      color: var(--b-text);
-      margin-bottom: 0.5rem;
-      transition: all 0.4s ease;
-    }
-    .hero-handle {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.6875rem;
-      color: var(--b-accent);
-      letter-spacing: 0.05em;
-      transition: all 0.4s ease;
-    }
-    .hero-bio {
-      font-size: 0.875rem;
-      color: var(--b-text-tertiary);
-      margin-top: 0.75rem;
-      max-width: 300px;
-      line-height: 1.6;
-    }
-    .hero-stats {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    .hero-stat {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.6875rem;
-      color: var(--b-text-tertiary);
-    }
-    .hero-stat-value {
-      display: block;
-      font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: var(--b-text);
-      line-height: 1;
-      margin-bottom: 0.125rem;
-      transition: all 0.4s ease;
-    }
-    .hero-profile:hover .hero-stat-value {
-      color: var(--b-accent);
-    }
-
-    /* CONTENT */
-    .index-content {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 3rem 6rem;
-      position: relative;
-    }
-
-    .year-group { margin-bottom: 5rem; }
-    .year-label {
-      font-family: 'Space Mono', monospace;
-      font-size: 6rem;
-      font-weight: 900;
-      letter-spacing: -0.05em;
-      color: var(--b-border-subtle);
-      line-height: 1;
-      margin-bottom: 2rem;
-      user-select: none;
-    }
-
-    /* WEEK ITEMS */
-    .week-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-    .week-item {
-      display: grid;
-      grid-template-columns: 80px 1fr auto;
-      gap: 2rem;
-      align-items: baseline;
-      padding: 2rem 0;
-      text-decoration: none;
-      color: inherit;
-      border-top: 1px solid var(--b-border);
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-    }
-    .week-item:last-child { border-bottom: 1px solid var(--b-border); }
-    .week-item::before {
-      content: '';
-      position: absolute;
-      left: -3rem; top: 0; bottom: 0;
-      width: 2px;
-      background: var(--b-accent);
-      transform: scaleY(0);
-      transform-origin: top;
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .week-item:hover { padding-left: 1rem; }
-    .week-item:hover::before { transform: scaleY(1); }
-
-    .week-item-week {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.6875rem;
-      font-weight: 700;
-      color: var(--b-accent);
-      letter-spacing: 0.1em;
-    }
-    .week-item-content {}
-    .week-item-title {
-      font-size: 1.25rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-      margin-bottom: 0.375rem;
-      transition: color 0.3s;
-    }
-    .week-item:hover .week-item-title { color: var(--b-accent); }
-    .week-item-subtitle {
-      font-size: 0.875rem;
-      color: var(--b-text-tertiary);
-      line-height: 1.5;
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .week-item-date {
-      font-family: 'Space Mono', monospace;
-      font-size: 0.75rem;
-      margin-top: 0.5rem;
-      color: var(--b-text-tertiary);
-      padding-top: 0.25rem;
-    }
-    .week-item-stat-value { font-weight: 700; }
-    .stat-commits .week-item-stat-value { color: var(--b-green); }
-    .stat-prs .week-item-stat-value { color: var(--b-badge-pr); }
-    .stat-reviews .week-item-stat-value { color: var(--b-badge-discussion); }
-
-    /* FOOTER */
-    .footer {
-      max-width: 960px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 4rem 3rem;
-      font-size: 0.8125rem;
-      color: var(--b-footer-text);
-      border-top: 1px solid var(--b-border);
-    }
-    .footer a { color: var(--b-footer-link); text-decoration: none; transition: color 0.2s; }
-    .footer a:hover { color: var(--b-accent); }
-
-    @media (max-width: 768px) {
-      .hero { padding: 0 1.5rem 4rem; min-height: auto; padding-top: 8rem; }
-      .hero-title { font-size: clamp(3rem, 15vw, 5rem); max-width: 100%; }
-      .hero-avatar-wrap { position: relative; top: auto; right: auto; margin-bottom: 2rem; }
-      .hero-avatar { width: 100px; height: 100px; }
-      .hero-profile { flex-direction: column; gap: 2rem; }
-      .hero-stats { flex-direction: row; gap: 2rem; }
-      .index-nav-inner { padding: 0.75rem 1.5rem; }
-      .index-content { padding: 0 1.5rem 4rem; }
-      .week-item { grid-template-columns: 1fr; gap: 0.5rem; }
-      .week-item::before { left: -1.5rem; }
-      .week-item-stats { margin-top: 0.5rem; }
-      .year-label { font-size: 3rem; }
-    }
-  </style>
   <script>
 (function(){
   var s=localStorage.getItem("theme");
@@ -838,104 +580,137 @@
 </head>
 <body>
 
-<nav class="index-nav">
-  <div class="index-nav-inner">
-    <span class="nav-site-title">liuzhen9320 Develop News</span>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<nav aria-label="Site navigation">
+  <div class="nav-inner">
+    <a href="../../" class="nav-site-title">liuzhen9320 Develop News</a>
+    <a href="../../" class="nav-back">&larr; 所有周报</a>
   </div>
 </nav>
 
-<section class="hero">
-  <!-- Geometric decorations -->
-  <div class="geo-circle geo-circle-1"></div>
-  <div class="geo-circle geo-circle-2"></div>
-  <div class="geo-circle geo-circle-3"></div>
-  <div class="geo-line geo-line-1"></div>
-  <div class="geo-line geo-line-2"></div>
-  <div class="geo-dot geo-dot-1"></div>
-  <div class="geo-dot geo-dot-2"></div>
-  <div class="geo-dot geo-dot-3"></div>
-
-  <a href="https://github.com/liuzhen9320" class="hero-avatar-wrap" target="_blank" rel="noopener nofollow">
-    <img src="https://avatars.githubusercontent.com/u/141824471?u&#x3D;f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&amp;v&#x3D;4" alt="liuzhen9320" class="hero-avatar" width="180" height="180" />
-  </a>
-
-  <div class="hero-inner">
-    <h1 class="hero-title">liuzhen9320 Develop News</h1>
-
-    <a href="https://github.com/liuzhen9320" class="hero-profile" target="_blank" rel="noopener nofollow">
-      <div class="hero-name-block">
-        <div class="hero-display-name">liuzhen932 🇦🇶</div>
-        <div class="hero-handle">@liuzhen9320</div>
-        
-        <div class="hero-bio">Antarctica</div>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat"><span class="hero-stat-value">32</span>followers</div>
-        <div class="hero-stat"><span class="hero-stat-value">51</span>repos</div>
-      </div>
-    </a>
-  </div>
-</section>
-
-<div class="index-content">
-  <div class="year-group">
-    <div class="year-label">2026</div>
-    <div class="week-list">
-      <a href="2026/W21/" class="week-item">
-        <div class="week-item-week">W21</div>
-        <div class="week-item-content">
-          <div class="week-item-title">liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复</div>
-          <div class="week-item-subtitle">本周聚焦该 Rust 前端工具的安全加固与依赖更新，共处理 3 个 PR、24 次提交，仅剩 1 个 CI 权限告警待下周处理</div>
-          <div class="week-item-date">2026 W21</div>
-        </div>
-        <div class="week-item-stats">
-          <span class="week-item-stat stat-commits"><span class="week-item-stat-value">24</span> commits</span>
-          <span class="week-item-stat stat-prs"><span class="week-item-stat-value">2</span> PRs</span>
-          <span class="week-item-stat stat-reviews"><span class="week-item-stat-value">1</span> reviews</span>
-        </div>
+<div class="report-hero">
+  <div class="report-hero-inner">
+    <div class="header-meta">
+      <a href="https://github.com/liuzhen9320" class="header-author" target="_blank" rel="noopener nofollow">
+        <img src="https://avatars.githubusercontent.com/u/141824471?u&#x3D;f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&amp;v&#x3D;4" alt="liuzhen9320" width="32" height="32" loading="lazy" />
+        <span>liuzhen9320</span>
       </a>
-      <a href="2026/W19/" class="week-item">
-        <div class="week-item-week">W19</div>
-        <div class="week-item-content">
-          <div class="week-item-title">DeepSeek_Web_To_API 完成 DSML 前缀 tokenized 分隔符支持</div>
-          <div class="week-item-subtitle">本周核心迭代该项目解析逻辑，同时连续推送10个自动化补丁版本，覆盖v1.0.3至v1.0.20</div>
-          <div class="week-item-date">2026 W19</div>
-        </div>
-        <div class="week-item-stats">
-          <span class="week-item-stat stat-commits"><span class="week-item-stat-value">33</span> commits</span>
-          <span class="week-item-stat stat-prs"><span class="week-item-stat-value">0</span> PRs</span>
-          <span class="week-item-stat stat-reviews"><span class="week-item-stat-value">1</span> reviews</span>
-        </div>
-      </a>
-      <a href="2026/W17/" class="week-item">
-        <div class="week-item-week">W17</div>
-        <div class="week-item-content">
-          <div class="week-item-title">4月24日单日11次提交，后端认证模块重构大爆发</div>
-          <div class="week-item-subtitle">本周总提交14次，全部集中在下半周，无PR无Review，全量本地迭代遗留代码清理</div>
-          <div class="week-item-date">2026 W17</div>
-        </div>
-        <div class="week-item-stats">
-          <span class="week-item-stat stat-commits"><span class="week-item-stat-value">14</span> commits</span>
-          <span class="week-item-stat stat-prs"><span class="week-item-stat-value">0</span> PRs</span>
-          <span class="week-item-stat stat-reviews"><span class="week-item-stat-value">0</span> reviews</span>
-        </div>
-      </a>
-      <a href="2026/W13/" class="week-item">
-        <div class="week-item-week">W13</div>
-        <div class="week-item-content">
-          <div class="week-item-title">新增功能整合</div>
-          <div class="week-item-subtitle">简化数据验证</div>
-          <div class="week-item-date">2026 W13</div>
-        </div>
-        <div class="week-item-stats">
-          <span class="week-item-stat stat-commits"><span class="week-item-stat-value">26</span> commits</span>
-          <span class="week-item-stat stat-prs"><span class="week-item-stat-value">0</span> PRs</span>
-          <span class="week-item-stat stat-reviews"><span class="week-item-stat-value">0</span> reviews</span>
-        </div>
-      </a>
+      <span class="header-sep">&middot;</span>
+      <span class="header-date">2026-03-23 - 2026-03-29</span>
     </div>
+    <h1 class="header-title">新增功能整合</h1>
+    <p class="header-sub">简化数据验证</p>
   </div>
 </div>
+
+<main id="main-content">
+<article class="page">
+  <div class="overview">
+    <p>用户需求聚焦功能优化与验证。,团队努力提升系统稳定性与性能。,技术挑战落地，确保用户体验优化。</p>
+  
+  </div>
+  <div class="section-group">
+    <div class="section-group-header">
+      <h2 class="section-group-title">摘要</h2>
+      <div class="section-group-line"></div>
+      <span class="section-group-count">2 个部分</span>
+    </div>
+  
+    <div class="section-summary">
+      <div class="section-type">repo-summary</div>
+      <div class="section-heading">核心功能升级</div>
+      <div class="section-body">新增数据校验模块与集成协议改进，提升系统安全性与兼容性。</div>
+  
+  
+  
+  
+      <div class="data-chips">
+        <span class="chip"><span class="chip-label">OAuth2升级</span> <span class="chip-value chip-default">核心功能协调</span></span>
+        <span class="chip"><span class="chip-label">新增本地化模块</span> <span class="chip-value chip-default">多语言支持增强</span></span>
+      </div>
+    </div>
+    <div class="section-summary">
+      <div class="section-type">activity-pattern</div>
+      <div class="section-heading">优先事项波动</div>
+      <div class="section-body">早期功能提交后波动剧烈，需持续优化资源分配。</div>
+  
+      <div class="mini-heatmap">
+        <div class="mh-day">
+          <div class="mh-block mh-level-4">17</div>
+          <div class="mh-label">一</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-1">4</div>
+          <div class="mh-label">二</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-4">14</div>
+          <div class="mh-label">三</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-1">3</div>
+          <div class="mh-label">四</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-4">14</div>
+          <div class="mh-label">五</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-2">6</div>
+          <div class="mh-label">六</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-3">12</div>
+          <div class="mh-label">日</div>
+        </div>
+      </div>
+  
+  
+  
+      <div class="data-chips">
+        <span class="chip"><span class="chip-label">高频请求处理</span> <span class="chip-value chip-default">负载均衡</span></span>
+        <span class="chip"><span class="chip-label">测试覆盖不足</span> <span class="chip-value chip-default">关键路径未充分验证</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="section-group">
+    <div class="section-group-header">
+      <h2 class="section-group-title">亮点</h2>
+      <div class="section-group-line"></div>
+      <span class="section-group-count">2 项</span>
+    </div>
+  
+    <div class="highlight-grid">
+    <div class="highlight-card">
+      <span class="highlight-badge highlight-pr">pr</span>
+      <div class="highlight-title">关键修复</div>
+      <div class="highlight-meta">owner/repo · 已解决严重 bug</div>
+      <div class="highlight-body">修复严重缺陷，提升系统稳定性。</div>
+    </div>
+    <div class="highlight-card">
+      <span class="highlight-badge highlight-issue">issue</span>
+      <div class="highlight-title">紧急问题</div>
+      <div class="highlight-meta">owner/repo · 需优先处理</div>
+      <div class="highlight-body">紧急修复需求迫切。</div>
+    </div>
+    </div>
+  </div>
+</article>
+</main>
+
+<div class="share-bar">
+  <span class="share-label">分享</span>
+  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W13/&text=%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD%E6%95%B4%E5%90%88&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W13/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
+  <a href="https://bsky.app/intent/compose?text=%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD%E6%95%B4%E5%90%88%20https://liuzhen9320.github.io/weekly-report/2026/W13/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
+</div>
+
+
+<nav class="week-nav" aria-label="Week navigation">
+  <span></span>
+  <a href="../../2026/W17/" class="week-nav-link">下一周 &rarr;</a>
+</nav>
 
 
 <footer class="footer">

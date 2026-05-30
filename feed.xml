@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>liuzhen9320 DevNews</title>
+    <title>liuzhen9320 Develop News</title>
     <link>https://liuzhen9320.github.io/weekly-report/</link>
     <description>Weekly reports by @liuzhen9320</description>
     <language>zh-CN</language>
     <atom:link href="https://liuzhen9320.github.io/weekly-report/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://liuzhen9320.github.io/weekly-report/og.png</url>
-      <title>liuzhen9320 DevNews</title>
+      <title>liuzhen9320 Develop News</title>
       <link>https://liuzhen9320.github.io/weekly-report/</link>
       <width>1200</width>
       <height>630</height>
@@ -64,6 +64,19 @@ Commits: 14, PRs: 0, Reviews: 0</description>
       <pubDate>Sun, 26 Apr 2026 17:00:00 GMT</pubDate>
       <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W17/og.png" type="image/png" length="0" />
       <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W17/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
+      <title>新增功能整合</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W13/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W13/</guid>
+      <description>简化数据验证
+
+用户需求聚焦功能优化与验证。,团队努力提升系统稳定性与性能。,技术挑战落地，确保用户体验优化。
+
+Commits: 26, PRs: 0, Reviews: 0</description>
+      <pubDate>Sun, 29 Mar 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W13/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W13/og.png" medium="image" type="image/png" width="1200" height="630" />
     </item>
   </channel>
 </rss>
