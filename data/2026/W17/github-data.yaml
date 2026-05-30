@@ -1,0 +1,44 @@
+username: liuzhen9320
+avatarUrl: https://avatars.githubusercontent.com/u/141824471?u=f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&v=4
+profile:
+  name: liuzhen932 🇦🇶
+  bio: 只要愿意去做，人无所不通。
+  company: null
+  location: Antarctica
+  followers: 32
+  following: 27
+  publicRepos: 51
+dateRange:
+  from: 2026-04-20
+  to: 2026-04-26
+stats:
+  totalCommits: 14
+  totalAdditions: 0
+  totalDeletions: 0
+  prsOpened: 0
+  prsMerged: 0
+  prsReviewed: 0
+  issuesOpened: 0
+  issuesClosed: 0
+dailyCommits:
+  - date: 2026-04-20
+    count: 2
+  - date: 2026-04-21
+    count: 2
+  - date: 2026-04-22
+    count: 2
+  - date: 2026-04-23
+    count: 2
+  - date: 2026-04-24
+    count: 11
+  - date: 2026-04-25
+    count: 6
+  - date: 2026-04-26
+    count: 10
+repositories: []
+pullRequests: []
+issues: []
+events: []
+commitMessages: []
+releases: []
+externalContributions: []

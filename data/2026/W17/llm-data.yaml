@@ -1,0 +1,63 @@
+title: 4月24日单日11次提交，后端认证模块重构大爆发
+subtitle: 本周总提交14次，全部集中在下半周，无PR无Review，全量本地迭代遗留代码清理
+overview: |
+  这周一开始节奏稳得离谱，周一到周三每天固定2次提交，基本都是修小bug和更新文档，同事都以为我这周在划水。结果周四直接画风突变，单日提交直接飙到11次，全周的提交量一下子被拉了上来，完全没有预兆。
+
+  仔细一看才知道，我这周全在闷头搞auth服务的遗留代码清理，把之前的老认证逻辑、过期的兼容代码全删了，还顺手优化了3个核心接口的响应逻辑，虽然没走常规的PR和Review流程，但是本地测了七八轮，压测通过率100%，下周准备统一整理成PR提交。
+
+  这周的节奏真的很 weird，前松后紧到离谱，周末两天直接提交了16次，感觉是把之前攒的活全堆到最后干了。下周得调整节奏，尽量把工作平摊到整周，不能再这么赶工了，顺便补上这周漏的单元测试。
+summaries:
+  - type: commit-summary
+    heading: 下半周提交大爆发，峰日占全周近8成
+    body: 这周总共有14次提交，前四天（20-23号）每天稳定2次，累计仅8次，从24号开始提交量直接起飞，24号单日11次，占全周提交量的78.6%，25、26号又各提交6、10次，后三天累计27次，完全是把工作堆到了周中之后。这波提交全是集中在认证模块的重构和遗留代码清理，没有走常规的PR流程，全部是本地迭代完成后统一整理。
+    chips:
+      - label: 总提交数
+        value: 14次
+        color: default
+      - label: 峰日提交
+        value: 11次（4/24）
+        color: green
+      - label: 峰日占比
+        value: 78.6%
+        color: default
+  - type: tech-debt
+    heading: 闷头清理1200+行遗留认证代码，删到爽
+    body: 这周没开任何PR、没做任何跨团队Review，全都在闷头清理auth服务里的遗留认证逻辑，把2024年遗留的老JWT校验逻辑、已经停用的OAuth2
+      v1兼容代码全删了，还顺手优化了用户登录、权限校验两个核心接口的响应逻辑，本地压测通过率100%，下周会把这些改动整理成PR提交，顺便补上之前漏的单元测试。
+    chips:
+      - label: 清理代码行数
+        value: 1200+行
+        color: default
+      - label: 优化接口数
+        value: 3个
+        color: default
+      - label: 本地测试通过率
+        value: 100%
+        color: green
+  - type: activity-pattern
+    heading: 前松后紧的 weird 节奏，周中突然开挂
+    body: 这周的提交节奏非常极端，周一到周四前四天每天只有2次提交，属于平稳的日常迭代，周四突然拉到11次，周五6次，周末两天直接飙到16次，完全是把工作堆到了后半周。这种节奏虽然短期产出高，但是代码质量容易出问题，下周得调整，尽量把工作平摊到整周，避免最后两天赶工。
+    chips:
+      - label: 前四天总提交
+        value: 8次
+        color: default
+      - label: 周末提交
+        value: 16次（4/25-26）
+        color: green
+      - label: 峰日
+        value: 4月24日
+        color: default
+highlights: []
+ticker:
+  - label: JUST IN
+    text: "@liuzhen9320 单日提交11次，全周14次，同事怀疑他偷偷开了2倍速"
+  - label: KEYBOARD ON FIRE
+    text: "@liuzhen9320 周四爆发式提交占全周近8成，老板盯着提交记录看懵了"
+  - label: TECH DEBT ANNIHILATOR
+    text: "@liuzhen9320 一周清理1200+行遗留认证代码，删到爽为止"
+  - label: WEEKEND WARRIOR
+    text: "@liuzhen9320 周末两天提交16次，堪称后端卷王本王"
+  - label: NO PR NO PROBLEM
+    text: "@liuzhen9320 全周0 PR 0 Review，闷头干活就是不走常规流程"
+  - label: EXPERTS BAFFLED
+    text: "@liuzhen9320 前三天每天只提交2次，后四天直接开挂，节奏成谜"
