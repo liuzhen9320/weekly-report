@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://liuzhen9320.github.io/weekly-report/sitemap.xml

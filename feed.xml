@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>liuzhen9320 DevNews</title>
+    <link>https://liuzhen9320.github.io/weekly-report/</link>
+    <description>Weekly reports by @liuzhen9320</description>
+    <language>zh-CN</language>
+    <atom:link href="https://liuzhen9320.github.io/weekly-report/feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://liuzhen9320.github.io/weekly-report/og.png</url>
+      <title>liuzhen9320 DevNews</title>
+      <link>https://liuzhen9320.github.io/weekly-report/</link>
+      <width>1200</width>
+      <height>630</height>
+    </image>
+    <item>
+      <title>liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W21/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W21/</guid>
+      <description>本周聚焦该 Rust 前端工具的安全加固与依赖更新，共处理 3 个 PR、24 次提交，仅剩 1 个 CI 权限告警待下周处理
+
+这周的工作几乎全部投入在个人维护的 Rust 前端工具 liuzhen9320/bird-lg-rs 上，原本只计划做个小的依赖升级，结果顺手把积压的 CI 配置优化和 GitHub 自动扫描出的安全告警一起处理了，没想到最后还剩下一个 workflow 权限相关的告警待收尾。整体改动都很聚焦，没有跨项目切换上下文，效率出奇的高。
+
+周初先搞定了最省心的依赖更新，把 shlex crate 升级到 v2 版本，顺带清理了 CI 里没用的构建 job，直接把构建流程简化了不少。没想到周三的时候 GitHub 代码扫描自动抛出了两个前端 XSS 相关的高危告警，赶紧花了半天时间做了 DOM 文本转义的修复，给动态路径组件加了允许列表校验和 URL 编码，彻底堵上了脚本注入的风险。
+
+这周没有对外协作，也没有接新的需求，所有工作都是围绕现有代码的可维护性和安全性做小步迭代，改动都很小但都很扎实。下周打算把剩下的 workflow 权限告警修掉，再考虑给项目补几个基础的集成测试用例，提升一下代码的可靠性。
+
+
+Commits: 24, PRs: 2, Reviews: 1</description>
+      <pubDate>Sun, 24 May 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W21/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W21/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+  </channel>
+</rss>
