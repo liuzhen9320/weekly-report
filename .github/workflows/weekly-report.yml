@@ -36,5 +36,5 @@ jobs:
           theme: 'brutalist'
           date: ${{ inputs.date }}
           llm-provider: 'openrouter'
-          llm-model: 'deepseek/deepseek-v4-flash:free'
+          llm-model: 'stepfun/step-3.7-flash'
           openrouter-api-key: ${{ secrets.OPENROUTER_API_KEY }}
