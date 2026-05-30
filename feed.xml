@@ -32,17 +32,10 @@ Commits: 24, PRs: 2, Reviews: 1</description>
       <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W21/og.png" medium="image" type="image/png" width="1200" height="630" />
     </item>
     <item>
-      <title>DeepSeek_Web_To_API 完成 DSML 前缀 tokenized 分隔符支持</title>
+      <title></title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W19/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W19/</guid>
-      <description>本周核心迭代该项目解析逻辑，同时连续推送10个自动化补丁版本，覆盖v1.0.3至v1.0.20
-
-这周我的所有开发精力都集中在Meow-Calculations/DeepSeek_Web_To_API项目上，核心目标是解决DSML前缀解析不支持tokenized分隔符的痛点——之前遇到前缀里带分隔符的token时，解析器会错误拆分，导致后续处理全错。同时我顺便把项目的CI/CD自动化发布流程跑通，不用再手动打tag发版本了。
-周一周二我集中精力搞核心逻辑重构，改了6个文件，加了161行代码删了7行，过了所有本地门禁（lint、单测、构建），最后把PR关掉之后直接触发了自动化发布。后面几天我就没怎么写新功能，主要是盯着发布流程，陆陆续续推了10个小版本，把之前积压的几个hotfix都发了出去，整个发布过程零故障。
-下周我打算给这次改的解析逻辑补全单元测试，把覆盖率往上提一提，顺便看看有没有其他解析相关的优化点，争取把这个模块的稳定性再拉高一个档次。
-
-
-Commits: 33, PRs: 0, Reviews: 1</description>
+      <description>Commits: 33, PRs: 0, Reviews: 1</description>
       <pubDate>Sun, 10 May 2026 17:00:00 GMT</pubDate>
       <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W19/og.png" type="image/png" length="0" />
       <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W19/og.png" medium="image" type="image/png" width="1200" height="630" />

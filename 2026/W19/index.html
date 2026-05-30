@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <title>DeepSeek_Web_To_API 完成 DSML 前缀 tokenized 分隔符支持 - 2026-05-04 - 2026-05-10</title>
+  <title> - 2026-05-04 - 2026-05-10</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="本周核心迭代该项目解析逻辑，同时连续推送10个自动化补丁版本，覆盖v1.0.3至v1.0.20" />
+  <meta name="description" content="" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <meta property="og:title" content="DeepSeek_Web_To_API 完成 DSML 前缀 tokenized 分隔符支持" />
-  <meta property="og:description" content="本周核心迭代该项目解析逻辑，同时连续推送10个自动化补丁版本，覆盖v1.0.3至v1.0.20" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W19/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -16,8 +16,8 @@
   <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W19/" />
   <meta property="og:site_name" content="liuzhen9320 Weekly Reports" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DeepSeek_Web_To_API 完成 DSML 前缀 tokenized 分隔符支持" />
-  <meta name="twitter:description" content="本周核心迭代该项目解析逻辑，同时连续推送10个自动化补丁版本，覆盖v1.0.3至v1.0.20" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="" />
   <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W19/og.png" />
   <meta name="author" content="liuzhen9320" />
   <meta name="theme-color" content="#050505" />
@@ -31,8 +31,8 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "DeepSeek_Web_To_API 完成 DSML 前缀 tokenized 分隔符支持",
-    "description": "本周核心迭代该项目解析逻辑，同时连续推送10个自动化补丁版本，覆盖v1.0.3至v1.0.20",
+    "headline": "",
+    "description": "",
     "author": {
       "@type": "Person",
       "name": "liuzhen9320",
@@ -584,7 +584,7 @@
 
 <nav aria-label="Site navigation">
   <div class="nav-inner">
-    <a href="../../" class="nav-site-title">liuzhen9320 DevNews</a>
+    <a href="../../" class="nav-site-title">liuzhen9320 Develop News</a>
     <a href="../../" class="nav-back">&larr; 所有周报</a>
   </div>
 </nav>
@@ -599,172 +599,29 @@
       <span class="header-sep">&middot;</span>
       <span class="header-date">2026-05-04 - 2026-05-10</span>
     </div>
-    <h1 class="header-title">DeepSeek_Web_To_API 完成 DSML 前缀 tokenized 分隔符支持</h1>
-    <p class="header-sub">本周核心迭代该项目解析逻辑，同时连续推送10个自动化补丁版本，覆盖v1.0.3至v1.0.20</p>
+    <h1 class="header-title"></h1>
+    <p class="header-sub"></p>
   </div>
 </div>
 
 <main id="main-content">
 <article class="page">
   <div class="overview">
-    <p>这周我的所有开发精力都集中在Meow-Calculations/DeepSeek_Web_To_API项目上，核心目标是解决DSML前缀解析不支持tokenized分隔符的痛点——之前遇到前缀里带分隔符的token时，解析器会错误拆分，导致后续处理全错。同时我顺便把项目的CI/CD自动化发布流程跑通，不用再手动打tag发版本了。
-  周一周二我集中精力搞核心逻辑重构，改了6个文件，加了161行代码删了7行，过了所有本地门禁（lint、单测、构建），最后把PR关掉之后直接触发了自动化发布。后面几天我就没怎么写新功能，主要是盯着发布流程，陆陆续续推了10个小版本，把之前积压的几个hotfix都发了出去，整个发布过程零故障。
-  下周我打算给这次改的解析逻辑补全单元测试，把覆盖率往上提一提，顺便看看有没有其他解析相关的优化点，争取把这个模块的稳定性再拉高一个档次。</p>
-  
-  </div>
-  <div class="section-group">
-    <div class="section-group-header">
-      <h2 class="section-group-title">摘要</h2>
-      <div class="section-group-line"></div>
-      <span class="section-group-count">5 个部分</span>
-    </div>
-  
-    <div class="section-summary">
-      <div class="section-type">deep-dive</div>
-      <div class="section-heading">DSML 前缀 tokenized 分隔符解析落地</div>
-      <div class="section-body">这次改的核心是把之前硬编码的分隔符解析逻辑改成流式tokenized处理，遇到分隔符不会直接拆分，而是先判断是不是token的一部分，完全兼容了之前的所有用例，没有破坏性变更。PR改了6个文件，过了所有本地门禁，最后顺利合入主分支。</div>
-  
-  
-  
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">修改文件数</span> <span class="chip-value chip-default">6个</span></span>
-        <span class="chip"><span class="chip-label">代码增减</span> <span class="chip-value chip-default">+161 -7</span></span>
-        <span class="chip"><span class="chip-label">门禁通过率</span> <span class="chip-value chip-green">100%</span></span>
-      </div>
-    </div>
-    <div class="section-summary">
-      <div class="section-type">repo-summary</div>
-      <div class="section-heading">DeepSeek_Web_To_API 仓库全面迭代</div>
-      <div class="section-body">这周所有代码贡献都集中在这个仓库，除了核心解析逻辑的优化，还完成了自动化发布流程的配置，后续只要合并代码到main分支就会自动触发构建、测试、发布全流程。目前仓库的解析模块测试覆盖率在85%左右，这次改动没有破坏任何现有单测。</div>
-  
-  
-  
-      <div class="repo-bars">
-        <div class="repo-bar-item">
-          <div class="repo-bar-header">
-            <span class="repo-bar-label">Meow-Calculations/DeepSeek_Web_To_API</span>
-            <span class="repo-bar-value">1 PRs</span>
-          </div>
-          <div class="repo-bar-track">
-            <div class="repo-bar-fill" style="width:100%"></div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">活跃仓库</span> <span class="chip-value chip-default">1个</span></span>
-        <span class="chip"><span class="chip-label">发布版本数</span> <span class="chip-value chip-green">10个</span></span>
-        <span class="chip"><span class="chip-label">PR合并数</span> <span class="chip-value chip-default">1个</span></span>
-      </div>
-    </div>
-    <div class="section-summary">
-      <div class="section-type">review-summary</div>
-      <div class="section-heading">参与1次外部代码评审</div>
-      <div class="section-body">这周我参与了1次外部项目的代码评审，主要给了些关于边界case处理的建议，帮对方修复了一个潜在的解析错误，对方很快就合并了我的建议。</div>
-  
-  
-  
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">评审次数</span> <span class="chip-value chip-default">1次</span></span>
-        <span class="chip"><span class="chip-label">建议采纳率</span> <span class="chip-value chip-green">100%</span></span>
-      </div>
-    </div>
-    <div class="section-summary">
-      <div class="section-type">activity-pattern</div>
-      <div class="section-heading">周中爆发式提交，无休息日</div>
-      <div class="section-body">从提交分布来看，周一直接干了18个提交，把核心逻辑全部改完，周二只做了2个细节调整，周三到周五每天提交在2-11个之间，主要是修发布相关的边角问题，周末两天各2个提交做收尾，整周7天都有提交，没有休息日。</div>
-  
-      <div class="mini-heatmap">
-        <div class="mh-day">
-          <div class="mh-block mh-level-4">18</div>
-          <div class="mh-label">一</div>
-        </div>
-        <div class="mh-day">
-          <div class="mh-block mh-level-1">2</div>
-          <div class="mh-label">二</div>
-        </div>
-        <div class="mh-day">
-          <div class="mh-block mh-level-1">2</div>
-          <div class="mh-label">三</div>
-        </div>
-        <div class="mh-day">
-          <div class="mh-block mh-level-3">11</div>
-          <div class="mh-label">四</div>
-        </div>
-        <div class="mh-day">
-          <div class="mh-block mh-level-2">8</div>
-          <div class="mh-label">五</div>
-        </div>
-        <div class="mh-day">
-          <div class="mh-block mh-level-2">9</div>
-          <div class="mh-label">六</div>
-        </div>
-        <div class="mh-day">
-          <div class="mh-block mh-level-1">2</div>
-          <div class="mh-label">日</div>
-        </div>
-      </div>
-  
-  
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">峰值日</span> <span class="chip-value chip-green">周一 18次</span></span>
-        <span class="chip"><span class="chip-label">周总提交</span> <span class="chip-value chip-default">33次</span></span>
-        <span class="chip"><span class="chip-label">休息日</span> <span class="chip-value chip-default">无</span></span>
-      </div>
-    </div>
-    <div class="section-summary">
-      <div class="section-type">devops</div>
-      <div class="section-heading">自动化发布流程跑通，连续推送10个补丁</div>
-      <div class="section-body">之前这个项目的发布都需要手动打tag、跑构建、传artifact，非常容易出错，这次我改了CI配置之后，全流程自动化，这周一口气推了10个小版本，把之前积压的几个hotfix都发了出去，整个过程没有出现过构建失败的情况。</div>
-  
-  
-  
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">版本跨度</span> <span class="chip-value chip-default">v1.0.3 → v1.0.20</span></span>
-        <span class="chip"><span class="chip-label">发布成功率</span> <span class="chip-value chip-green">100%</span></span>
-        <span class="chip"><span class="chip-label">触发方式</span> <span class="chip-value chip-default">CI自动化</span></span>
-      </div>
-    </div>
-  </div>
-  <div class="section-group">
-    <div class="section-group-header">
-      <h2 class="section-group-title">亮点</h2>
-      <div class="section-group-line"></div>
-      <span class="section-group-count">2 项</span>
-    </div>
-  
-    <div class="highlight-grid">
-    <div class="highlight-card">
-      <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/Meow-Calculations/DeepSeek_Web_To_API/pull/1" target="_blank" rel="noopener nofollow">Enhance DSML prefix handling to support tokenized separators</a></div>
-      <div class="highlight-meta">Meow-Calculations/DeepSeek_Web_To_API · closed May 4 · +161 -7 · 6 files</div>
-      <div class="highlight-body">这个PR解决了DSML前缀解析遇到带分隔符的token会误拆的核心痛点，优化后的逻辑完全兼容现有用例，没有引入破坏性变更，是这周最核心的技术产出。</div>
-    </div>
-    <div class="highlight-card">
-      <span class="highlight-badge highlight-release">release</span>
-      <div class="highlight-title">v1.0.20</div>
-      <div class="highlight-meta">Meow-Calculations/DeepSeek_Web_To_API · released May 10</div>
-      <div class="highlight-body">这是本周推送的最后一个补丁版本，包含了DSML前缀优化的全部内容，同时修复了之前版本里的两个边界case问题，目前线上运行稳定。</div>
-    </div>
-    </div>
+    
   </div>
 </article>
 </main>
 
 <div class="share-bar">
   <span class="share-label">分享</span>
-  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W19/&text=DeepSeek_Web_To_API%20%E5%AE%8C%E6%88%90%20DSML%20%E5%89%8D%E7%BC%80%20tokenized%20%E5%88%86%E9%9A%94%E7%AC%A6%E6%94%AF%E6%8C%81&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
+  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W19/&text=&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
   <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W19/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
-  <a href="https://bsky.app/intent/compose?text=DeepSeek_Web_To_API%20%E5%AE%8C%E6%88%90%20DSML%20%E5%89%8D%E7%BC%80%20tokenized%20%E5%88%86%E9%9A%94%E7%AC%A6%E6%94%AF%E6%8C%81%20https://liuzhen9320.github.io/weekly-report/2026/W19/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
+  <a href="https://bsky.app/intent/compose?text=%20https://liuzhen9320.github.io/weekly-report/2026/W19/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
 </div>
 
 
 <nav class="week-nav" aria-label="Week navigation">
-  <span></span>
+  <a href="../../2026/W17/" class="week-nav-link">&larr; 上一周</a>
   <a href="../../2026/W21/" class="week-nav-link">下一周 &rarr;</a>
 </nav>
 
