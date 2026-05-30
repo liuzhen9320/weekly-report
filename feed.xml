@@ -47,5 +47,23 @@ Commits: 33, PRs: 0, Reviews: 1</description>
       <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W19/og.png" type="image/png" length="0" />
       <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W19/og.png" medium="image" type="image/png" width="1200" height="630" />
     </item>
+    <item>
+      <title>4月24日单日11次提交，后端认证模块重构大爆发</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W17/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W17/</guid>
+      <description>本周总提交14次，全部集中在下半周，无PR无Review，全量本地迭代遗留代码清理
+
+这周一开始节奏稳得离谱，周一到周三每天固定2次提交，基本都是修小bug和更新文档，同事都以为我这周在划水。结果周四直接画风突变，单日提交直接飙到11次，全周的提交量一下子被拉了上来，完全没有预兆。
+
+仔细一看才知道，我这周全在闷头搞auth服务的遗留代码清理，把之前的老认证逻辑、过期的兼容代码全删了，还顺手优化了3个核心接口的响应逻辑，虽然没走常规的PR和Review流程，但是本地测了七八轮，压测通过率100%，下周准备统一整理成PR提交。
+
+这周的节奏真的很 weird，前松后紧到离谱，周末两天直接提交了16次，感觉是把之前攒的活全堆到最后干了。下周得调整节奏，尽量把工作平摊到整周，不能再这么赶工了，顺便补上这周漏的单元测试。
+
+
+Commits: 14, PRs: 0, Reviews: 0</description>
+      <pubDate>Sun, 26 Apr 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W17/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W17/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
   </channel>
 </rss>
