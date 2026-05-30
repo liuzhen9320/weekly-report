@@ -18,7 +18,7 @@ permissions:
   pages: write
 
 env:
-  SITE_TITLE: 'liuzhen9320 DevNews'
+  SITE_TITLE: 'liuzhen9320 Develop News'
 
 jobs:
   weekly:
@@ -26,7 +26,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: deariary/github-weekly-reporter@main
+      - uses: deariary/github-weekly-reporter@e406cfda256ab9546e5b6a9859616f22b696065e
         with:
           github-token: ${{ secrets.GH_PAT }}
           username: 'liuzhen9320'
