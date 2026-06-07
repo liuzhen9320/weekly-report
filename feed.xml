@@ -14,6 +14,24 @@
       <height>630</height>
     </image>
     <item>
+      <title>OpenGrok 同步大改动提交</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W23/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W23/</guid>
+      <description>本周在 opengrok 仓库完成一次大规模代码同步，新增 6.3k 行
+
+这周的主要任务是把旧系统的代码迁移到我的 opengrok 仓库，规模空前。单个 PR 涉及 97 个文件，新增 6,350 行，删除 1,690 行，几乎是一场代码搬家马拉松。
+
+提交节奏从周初的零星提交逐步加速，周五达到了峰值 11 次 commit，随后在周末稍有回落。虽然只开了一个 PR，但每天的 commit 数量说明了我在本地大量拆分、测试和调试的工作量。
+
+这次同步为后续的搜索索引优化奠定了基础，也让团队可以直接在 GitHub 上审阅历史迁移细节。接下来计划在本月末完成索引性能基准测试。
+
+
+Commits: 33, PRs: 1, Reviews: 0</description>
+      <pubDate>Sun, 07 Jun 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W23/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W23/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W21/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W21/</guid>

@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <title>liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复 - 2026-05-18 - 2026-05-24</title>
+  <title>OpenGrok 同步大改动提交 - 2026-06-01 - 2026-06-07</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="本周聚焦该 Rust 前端工具的安全加固与依赖更新，共处理 3 个 PR、24 次提交，仅剩 1 个 CI 权限告警待下周处理" />
+  <meta name="description" content="本周在 opengrok 仓库完成一次大规模代码同步，新增 6.3k 行" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <meta property="og:title" content="liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复" />
-  <meta property="og:description" content="本周聚焦该 Rust 前端工具的安全加固与依赖更新，共处理 3 个 PR、24 次提交，仅剩 1 个 CI 权限告警待下周处理" />
-  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W21/og.png" />
+  <meta property="og:title" content="OpenGrok 同步大改动提交" />
+  <meta property="og:description" content="本周在 opengrok 仓库完成一次大规模代码同步，新增 6.3k 行" />
+  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W23/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W21/" />
+  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W23/" />
   <meta property="og:site_name" content="liuzhen9320 Weekly Reports" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复" />
-  <meta name="twitter:description" content="本周聚焦该 Rust 前端工具的安全加固与依赖更新，共处理 3 个 PR、24 次提交，仅剩 1 个 CI 权限告警待下周处理" />
-  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W21/og.png" />
+  <meta name="twitter:title" content="OpenGrok 同步大改动提交" />
+  <meta name="twitter:description" content="本周在 opengrok 仓库完成一次大规模代码同步，新增 6.3k 行" />
+  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W23/og.png" />
   <meta name="author" content="liuzhen9320" />
   <meta name="theme-color" content="#050505" />
-  <meta property="article:published_time" content="2026-05-24" />
+  <meta property="article:published_time" content="2026-06-07" />
   <meta property="article:author" content="https://github.com/liuzhen9320" />
   <link rel="icon" href="https://avatars.githubusercontent.com/u/141824471?u&#x3D;f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&amp;v&#x3D;4" />
-  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W21/" />
+  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W23/" />
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://liuzhen9320.github.io/weekly-report/feed.xml" />
   <meta name="view-transition" content="same-origin" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复",
-    "description": "本周聚焦该 Rust 前端工具的安全加固与依赖更新，共处理 3 个 PR、24 次提交，仅剩 1 个 CI 权限告警待下周处理",
+    "headline": "OpenGrok 同步大改动提交",
+    "description": "本周在 opengrok 仓库完成一次大规模代码同步，新增 6.3k 行",
     "author": {
       "@type": "Person",
       "name": "liuzhen9320",
       "url": "https://github.com/liuzhen9320"
     },
-    "image": "https://liuzhen9320.github.io/weekly-report/2026/W21/og.png",
-    "datePublished": "2026-05-24"
+    "image": "https://liuzhen9320.github.io/weekly-report/2026/W23/og.png",
+    "datePublished": "2026-06-07"
   }
   </script>
   <script type="application/ld+json">
@@ -48,7 +48,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://liuzhen9320.github.io/weekly-report/" },
-      { "@type": "ListItem", "position": 2, "name": "2026-05-18 - 2026-05-24", "item": "https://liuzhen9320.github.io/weekly-report/2026/W21/" }
+      { "@type": "ListItem", "position": 2, "name": "2026-06-01 - 2026-06-07", "item": "https://liuzhen9320.github.io/weekly-report/2026/W23/" }
     ]
   }
   </script>
@@ -597,54 +597,40 @@
         <span>liuzhen9320</span>
       </a>
       <span class="header-sep">&middot;</span>
-      <span class="header-date">2026-05-18 - 2026-05-24</span>
+      <span class="header-date">2026-06-01 - 2026-06-07</span>
     </div>
-    <h1 class="header-title">liuzhen9320/bird-lg-rs 完成 shlex v2 升级、CI 精简与前端 XSS 修复</h1>
-    <p class="header-sub">本周聚焦该 Rust 前端工具的安全加固与依赖更新，共处理 3 个 PR、24 次提交，仅剩 1 个 CI 权限告警待下周处理</p>
+    <h1 class="header-title">OpenGrok 同步大改动提交</h1>
+    <p class="header-sub">本周在 opengrok 仓库完成一次大规模代码同步，新增 6.3k 行</p>
   </div>
 </div>
 
 <main id="main-content">
 <article class="page">
   <div class="overview">
-    <p>这周的工作几乎全部投入在个人维护的 Rust 前端工具 liuzhen9320/bird-lg-rs 上，原本只计划做个小的依赖升级，结果顺手把积压的 CI 配置优化和 GitHub 自动扫描出的安全告警一起处理了，没想到最后还剩下一个 workflow 权限相关的告警待收尾。整体改动都很聚焦，没有跨项目切换上下文，效率出奇的高。</p>
-  <p>周初先搞定了最省心的依赖更新，把 shlex crate 升级到 v2 版本，顺带清理了 CI 里没用的构建 job，直接把构建流程简化了不少。没想到周三的时候 GitHub 代码扫描自动抛出了两个前端 XSS 相关的高危告警，赶紧花了半天时间做了 DOM 文本转义的修复，给动态路径组件加了允许列表校验和 URL 编码，彻底堵上了脚本注入的风险。</p>
-  <p>这周没有对外协作，也没有接新的需求，所有工作都是围绕现有代码的可维护性和安全性做小步迭代，改动都很小但都很扎实。下周打算把剩下的 workflow 权限告警修掉，再考虑给项目补几个基础的集成测试用例，提升一下代码的可靠性。</p>
+    <p>这周的主要任务是把旧系统的代码迁移到我的 opengrok 仓库，规模空前。单个 PR 涉及 97 个文件，新增 6,350 行，删除 1,690 行，几乎是一场代码搬家马拉松。</p>
+  <p>提交节奏从周初的零星提交逐步加速，周五达到了峰值 11 次 commit，随后在周末稍有回落。虽然只开了一个 PR，但每天的 commit 数量说明了我在本地大量拆分、测试和调试的工作量。</p>
+  <p>这次同步为后续的搜索索引优化奠定了基础，也让团队可以直接在 GitHub 上审阅历史迁移细节。接下来计划在本月末完成索引性能基准测试。</p>
   
   </div>
   <div class="section-group">
     <div class="section-group-header">
       <h2 class="section-group-title">摘要</h2>
       <div class="section-group-line"></div>
-      <span class="section-group-count">4 个部分</span>
+      <span class="section-group-count">3 个部分</span>
     </div>
   
-    <div class="section-summary">
-      <div class="section-type">deep-dive</div>
-      <div class="section-heading">前端 XSS 告警修复全记录</div>
-      <div class="section-body">GitHub 代码扫描自动识别出 bird-lg-rs 前端存在将 DOM 派生文本误解析为 HTML 的 XSS 风险，属于高危安全漏洞。修复时没有选择简单屏蔽告警，而是按照前端安全最佳实践处理：所有从 DOM 获取的动态值都标记为不可信输入，对路径这类有明确格式要求的字段做允许列表校验，同时对动态路径组件做 URL 编码，从根源上避免了恶意脚本注入的可能。</div>
-  
-  
-  
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">漏洞等级</span> <span class="chip-value chip-red">高危 XSS</span></span>
-        <span class="chip"><span class="chip-label">修复方案</span> <span class="chip-value chip-orange">允许列表 + URL 编码</span></span>
-        <span class="chip"><span class="chip-label">涉及文件</span> <span class="chip-value chip-default">1 个前端文件</span></span>
-      </div>
-    </div>
     <div class="section-summary">
       <div class="section-type">repo-summary</div>
-      <div class="section-heading">bird-lg-rs 本周改动全景</div>
-      <div class="section-body">本周所有 PR、提交和代码修改都集中在 liuzhen9320/bird-lg-rs 这一个仓库，没有涉及其他项目的协作或对外贡献。改动覆盖三个方向：依赖升级、CI 配置精简、安全修复，都是围绕提升项目的安全性和可维护性做的小步迭代，没有引入大的功能变更，风险极低。</div>
+      <div class="section-heading">opengrok 大规模同步</div>
+      <div class="section-body">本周唯一活跃的仓库是 liuzhen9320/opengrok，开启了一个名为 “sync” 的 PR，涉及 97 个文件。同步工作主要是把旧代码库完整搬入，以便后续统一管理和 CI 检查。</div>
   
   
   
       <div class="repo-bars">
         <div class="repo-bar-item">
           <div class="repo-bar-header">
-            <span class="repo-bar-label">liuzhen9320/bird-lg-rs</span>
-            <span class="repo-bar-value">3 PRs</span>
+            <span class="repo-bar-label">liuzhen9320/opengrok</span>
+            <span class="repo-bar-value">1 PRs</span>
           </div>
           <div class="repo-bar-track">
             <div class="repo-bar-fill" style="width:100%"></div>
@@ -653,65 +639,65 @@
       </div>
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">活跃仓库</span> <span class="chip-value chip-default">liuzhen9320/bird-lg-rs</span></span>
-        <span class="chip"><span class="chip-label">PR 数量</span> <span class="chip-value chip-blue">3 个</span></span>
-        <span class="chip"><span class="chip-label">总提交数</span> <span class="chip-value chip-default">24 个</span></span>
+        <span class="chip"><span class="chip-label">liuzhen9320/opengrok</span> <span class="chip-value chip-default">1 PR</span></span>
+        <span class="chip"><span class="chip-label">文件数</span> <span class="chip-value chip-default">97</span></span>
+        <span class="chip"><span class="chip-label">行增</span> <span class="chip-value chip-default">+6350</span></span>
       </div>
     </div>
     <div class="section-summary">
       <div class="section-type">commit-summary</div>
-      <div class="section-heading">提交节奏的两极分化</div>
-      <div class="section-body">这周的提交量分布特别有意思，周一集中干了 18 个提交，把大部分计划内的改动都堆在那天搞定了，其中就包括 'fix(ci): remove useless jobs' 和 'refactor(ci): update cicd files' 两个 CI 相关的提交，顺带把构建流程简化了不少。之后周中每天只有 1-3 个提交，属于正常的收尾和测试节奏。没想到周五又突然来了个小爆发，连续推了 6 个提交修小问题，看来我确实是赶在周初冲量、周中摸鱼、周五收尾的固定节奏。</div>
+      <div class="section-heading">提交节奏极速攀升</div>
+      <div class="section-body">从周一的 2 次提交到周五的 11 次，整个星期共计 33 次 commit，平均每天约 4.7 次。大多数 commit 都是小步快跑的增量，以确保同步过程可回溯。</div>
   
   
       <div class="diff-bar">
-        <div class="diff-add" style="flex:30"></div>
-        <div class="diff-del" style="flex:13"></div>
+        <div class="diff-add" style="flex:6350"></div>
+        <div class="diff-del" style="flex:1690"></div>
       </div>
       <div class="diff-labels">
-        <span class="diff-label-add">+30</span>
-        <span class="diff-label-del">-13</span>
+        <span class="diff-label-add">+6,350</span>
+        <span class="diff-label-del">-1,690</span>
       </div>
   
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">峰值日</span> <span class="chip-value chip-green">5月22日 28 提交</span></span>
-        <span class="chip"><span class="chip-label">低谷日</span> <span class="chip-value chip-default">5月20日 1 提交</span></span>
-        <span class="chip"><span class="chip-label">总提交数</span> <span class="chip-value chip-default">24 个</span></span>
+        <span class="chip"><span class="chip-label">总提交</span> <span class="chip-value chip-default">33</span></span>
+        <span class="chip"><span class="chip-label">峰值</span> <span class="chip-value chip-green">Tue 11</span></span>
+        <span class="chip"><span class="chip-label">行改动</span> <span class="chip-value chip-default">+6350 -1690</span></span>
       </div>
     </div>
     <div class="section-summary">
       <div class="section-type">activity-pattern</div>
-      <div class="section-heading">沉浸式单项目迭代周</div>
-      <div class="section-body">这周完全没有跨项目的协作或者对外贡献，所有精力都花在 bird-lg-rs 上，连代码审查都只有 1 次，大部分时间都是自己闷头改代码、跑测试、修告警，不需要来回切换上下文，效率比多项目并行的时候高了不少。唯一的遗憾是没来得及给项目补集成测试用例，只能留到下周了。</div>
+      <div class="section-heading">周五冲刺，周末略有回落</div>
+      <div class="section-body">提交量在周四至周五出现明显跳升，可能是因为完成了主要迁移逻辑后进行的细节修正。周末的 commit 数量回落到 3-5 次，表明进入了代码审查和文档整理阶段。</div>
   
       <div class="mini-heatmap">
         <div class="mh-day">
-          <div class="mh-block mh-level-3">18</div>
+          <div class="mh-block mh-level-1">2</div>
           <div class="mh-label">一</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-1">3</div>
+          <div class="mh-block mh-level-2">3</div>
           <div class="mh-label">二</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-1">1</div>
+          <div class="mh-block mh-level-2">5</div>
           <div class="mh-label">三</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-1">3</div>
+          <div class="mh-block mh-level-3">8</div>
           <div class="mh-label">四</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-4">28</div>
+          <div class="mh-block mh-level-4">11</div>
           <div class="mh-label">五</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-1">5</div>
+          <div class="mh-block mh-level-2">3</div>
           <div class="mh-label">六</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-1">6</div>
+          <div class="mh-block mh-level-2">5</div>
           <div class="mh-label">日</div>
         </div>
       </div>
@@ -719,9 +705,8 @@
   
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">代码审查数</span> <span class="chip-value chip-blue">1 次</span></span>
-        <span class="chip"><span class="chip-label">跨项目协作</span> <span class="chip-value chip-default">0 次</span></span>
-        <span class="chip"><span class="chip-label">Issue 处理</span> <span class="chip-value chip-default">0 个</span></span>
+        <span class="chip"><span class="chip-label">最高日</span> <span class="chip-value chip-green">Fri 11</span></span>
+        <span class="chip"><span class="chip-label">最低日</span> <span class="chip-value chip-red">Mon 2</span></span>
       </div>
     </div>
   </div>
@@ -729,27 +714,15 @@
     <div class="section-group-header">
       <h2 class="section-group-title">亮点</h2>
       <div class="section-group-line"></div>
-      <span class="section-group-count">3 项</span>
+      <span class="section-group-count">1 项</span>
     </div>
   
     <div class="highlight-grid">
     <div class="highlight-card">
       <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/13" target="_blank" rel="noopener nofollow">fix(deps): Update Rust crate shlex to v2 (main)</a></div>
-      <div class="highlight-meta">liuzhen9320/bird-lg-rs · merged May 22 · +16 -10 · 2 files</div>
-      <div class="highlight-body">这个依赖升级解决了旧版 shlex 在构建文档时的编译错误，顺带将 crate 升级到 v2 版本，避免了后续潜在的 API 兼容性问题，是本周改动里最基础也最必要的一个。</div>
-    </div>
-    <div class="highlight-card">
-      <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/16" target="_blank" rel="noopener nofollow">refactor(frontend): DOM text reinterpreted as HTML</a></div>
-      <div class="highlight-meta">liuzhen9320/bird-lg-rs · merged May 19 · +11 -3 · 1 files</div>
-      <div class="highlight-body">这个 PR 修复了 GitHub 代码扫描标记的高危 XSS 安全告警，修复方案符合前端安全最佳实践，彻底堵上了动态 DOM 内容的脚本注入风险，比单纯屏蔽告警靠谱得多。</div>
-    </div>
-    <div class="highlight-card">
-      <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/17" target="_blank" rel="noopener nofollow">Potential fix for code scanning alert no. 7: Workflow does not contain permissions</a></div>
-      <div class="highlight-meta">liuzhen9320/bird-lg-rs · opened May 24 · +3 -0 · 1 files</div>
-      <div class="highlight-body">这个 PR 给 CI workflow 加了显式的 permissions 块，遵循最小权限原则，合并后就能清掉最后一个代码扫描告警，下周合了就能拿到全绿的安全扫描结果。</div>
+      <div class="highlight-title"><a href="https://github.com/liuzhen9320/opengrok/pull/1" target="_blank" rel="noopener nofollow">sync</a></div>
+      <div class="highlight-meta">liuzhen9320/opengrok · opened Jun 1 · +6350 -1690 · 97 files</div>
+      <div class="highlight-body">这次同步把整个旧系统的源码搬进了 opengrok，几乎把所有历史文件都带了过来，为后续搜索功能提供了完整的数据基础。</div>
     </div>
     </div>
   </div>
@@ -758,15 +731,14 @@
 
 <div class="share-bar">
   <span class="share-label">分享</span>
-  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W21/&text=liuzhen9320%2Fbird-lg-rs%20%E5%AE%8C%E6%88%90%20shlex%20v2%20%E5%8D%87%E7%BA%A7%E3%80%81CI%20%E7%B2%BE%E7%AE%80%E4%B8%8E%E5%89%8D%E7%AB%AF%20XSS%20%E4%BF%AE%E5%A4%8D&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W21/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
-  <a href="https://bsky.app/intent/compose?text=liuzhen9320%2Fbird-lg-rs%20%E5%AE%8C%E6%88%90%20shlex%20v2%20%E5%8D%87%E7%BA%A7%E3%80%81CI%20%E7%B2%BE%E7%AE%80%E4%B8%8E%E5%89%8D%E7%AB%AF%20XSS%20%E4%BF%AE%E5%A4%8D%20https://liuzhen9320.github.io/weekly-report/2026/W21/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
+  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W23/&text=OpenGrok%20%E5%90%8C%E6%AD%A5%E5%A4%A7%E6%94%B9%E5%8A%A8%E6%8F%90%E4%BA%A4&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W23/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
+  <a href="https://bsky.app/intent/compose?text=OpenGrok%20%E5%90%8C%E6%AD%A5%E5%A4%A7%E6%94%B9%E5%8A%A8%E6%8F%90%E4%BA%A4%20https://liuzhen9320.github.io/weekly-report/2026/W23/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
 </div>
 
-
 <nav class="week-nav" aria-label="Week navigation">
-  <a href="../../2026/W19/" class="week-nav-link">&larr; 上一周</a>
-  <a href="../../2026/W23/" class="week-nav-link">下一周 &rarr;</a>
+  <a href="../../2026/W21/" class="week-nav-link">&larr; 上一周</a>
+  <span></span>
 </nav>
 
 
