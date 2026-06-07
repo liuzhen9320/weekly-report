@@ -1,0 +1,63 @@
+title: OpenGrok 同步大改动提交
+subtitle: 本周在 opengrok 仓库完成一次大规模代码同步，新增 6.3k 行
+overview: |
+  这周的主要任务是把旧系统的代码迁移到我的 opengrok 仓库，规模空前。单个 PR 涉及 97 个文件，新增 6,350 行，删除 1,690 行，几乎是一场代码搬家马拉松。
+
+  提交节奏从周初的零星提交逐步加速，周五达到了峰值 11 次 commit，随后在周末稍有回落。虽然只开了一个 PR，但每天的 commit 数量说明了我在本地大量拆分、测试和调试的工作量。
+
+  这次同步为后续的搜索索引优化奠定了基础，也让团队可以直接在 GitHub 上审阅历史迁移细节。接下来计划在本月末完成索引性能基准测试。
+summaries:
+  - type: repo-summary
+    heading: opengrok 大规模同步
+    body: 本周唯一活跃的仓库是 liuzhen9320/opengrok，开启了一个名为 “sync” 的 PR，涉及 97 个文件。同步工作主要是把旧代码库完整搬入，以便后续统一管理和 CI 检查。
+    chips:
+      - label: liuzhen9320/opengrok
+        value: 1 PR
+        color: default
+      - label: 文件数
+        value: "97"
+        color: default
+      - label: 行增
+        value: "+6350"
+        color: default
+  - type: commit-summary
+    heading: 提交节奏极速攀升
+    body: 从周一的 2 次提交到周五的 11 次，整个星期共计 33 次 commit，平均每天约 4.7 次。大多数 commit 都是小步快跑的增量，以确保同步过程可回溯。
+    chips:
+      - label: 总提交
+        value: "33"
+        color: default
+      - label: 峰值
+        value: Tue 11
+        color: green
+      - label: 行改动
+        value: +6350 -1690
+        color: default
+  - type: activity-pattern
+    heading: 周五冲刺，周末略有回落
+    body: 提交量在周四至周五出现明显跳升，可能是因为完成了主要迁移逻辑后进行的细节修正。周末的 commit 数量回落到 3-5 次，表明进入了代码审查和文档整理阶段。
+    chips:
+      - label: 最高日
+        value: Fri 11
+        color: green
+      - label: 最低日
+        value: Mon 2
+        color: red
+highlights:
+  - type: pr
+    title: sync
+    repo: liuzhen9320/opengrok
+    meta: opened Jun 1 · +6350 -1690 · 97 files
+    body: 这次同步把整个旧系统的源码搬进了 opengrok，几乎把所有历史文件都带了过来，为后续搜索功能提供了完整的数据基础。
+    url: https://github.com/liuzhen9320/opengrok/pull/1
+ticker:
+  - label: ABSOLUTE CARNAGE
+    text: "@liuzhen9320 进行史诗级代码迁移，新增 6,350 行代码"
+  - label: NOT A DRILL
+    text: "@liuzhen9320 周五提交 11 次 commit，冲刺模式全开"
+  - label: EXPERTS BAFFLED
+    text: "@liuzhen9320 单 PR 涉及 97 个文件，同行惊呼不可能"
+  - label: DEVELOPING
+    text: "@liuzhen9320 本周累计 33 次 commit，代码库热度飙升"
+  - label: UNPRECEDENTED
+    text: "@liuzhen9320 完成一次跨 6k 行代码的同步，大胆又激进"
