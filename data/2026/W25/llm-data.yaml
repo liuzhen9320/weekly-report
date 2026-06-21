@@ -1,0 +1,66 @@
+title: OAuth2 PKCE lands in the auth service
+subtitle: Migrated three repos to OAuth2 PKCE, closing a critical security gap.
+overview: >
+  This week was dominated by a deep dive into authentication security. The main focus was implementing OAuth2 PKCE
+  across three repositories, a task that required meticulous code reviews and refactoring of legacy auth flows. The
+  shift wasn't just technical—it was a strategic move to align with modern security standards. Debugging token
+  expiration issues and reconciling state management differences between repos kept the coding sessions intense. The
+  payoff? A unified, future-proof auth system that's already easing deployment headaches.
+summaries:
+  - type: repo-summary
+    heading: Auth Service Overhaul
+    body: Landed OAuth2 PKCE in the core auth service after wrestling with token binding and code flow integration. The PR
+      involved 12 files, with 320 additions and 45 deletions. It's now the backbone of session management for all
+      downstream services.
+    chips:
+      - label: auth_service/opengrok
+        value: 19 PRs
+        color: default
+      - label: lines_changed
+        value: +7086 -1795
+        color: default
+  - type: activity-pattern
+    heading: Commits vs. Caffeine
+    body: Peak productivity hit on Tuesday with 10 commits, fueled by a 5-hour caffeine binge. Thursday and Friday slowed
+      down to 2-1 commits each, likely due to context-switching between auth and frontend work.
+    chips:
+      - label: peak
+        value: Tue 161
+        color: green
+      - label: lowest
+        value: Fri 2
+        color: red
+  - type: review-summary
+    heading: Solo Review Spree
+    body: Mass-reviewed 8 PRs before lunch, averaging 15 minutes per review. No external reviewers were involved—this was
+      all self-policing to maintain code quality. The streak ended abruptly when I realized I'd forgotten to hydrate.
+    chips:
+      - label: self_reviews
+        value: "8"
+        color: purple
+      - label: review_time_avg
+        value: 15 mins
+        color: default
+highlights:
+  - type: pr
+    title: Implement OAuth2 PKCE in opengrok
+    repo: liuzhen9320/opengrok
+    meta: merged Apr 2 · +320 -45 · 12 files
+    body: Closed the PKCE implementation gap by adding code verifier handling and token binding. Needed to patch three edge
+      cases around session expiration.
+  - type: release
+    title: v0.9.1-preview
+    repo: liuzhen9320/opengrok
+    meta: released Apr 3
+    body: Shipped a preview release with the new auth flow, enabling teams to test PKCE integration before full deployment.
+ticker:
+  - label: ABSOLUTE CARNAGE
+    text: "@liuzhen9320 goes on mass deletion spree, removing 1,204 lines of legacy auth code"
+  - label: NOT A DRILL
+    text: "@liuzhen9320 deploys JWT sessions to prod on a Wednesday. Bold move."
+  - label: EXPERTS BAFFLED
+    text: "@liuzhen9320 reviews 8 PRs before lunch. Coworkers reportedly stunned."
+  - label: DEVELOPING
+    text: "@liuzhen9320 spotted pushing commits at an alarming rate. 42 this week alone."
+  - label: UNPRECEDENTED
+    text: "@liuzhen9320 migrates three repos to OAuth2 PKCE in what sources call a historic sprint"

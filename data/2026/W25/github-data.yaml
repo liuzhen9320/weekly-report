@@ -1,0 +1,63 @@
+username: liuzhen9320
+avatarUrl: https://avatars.githubusercontent.com/u/141824471?u=f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&v=4
+profile:
+  name: liuzhen932 🇦🇶
+  bio: 只要愿意去做，人无所不通。
+  company: null
+  location: Antarctica
+  followers: 35
+  following: 28
+  publicRepos: 56
+dateRange:
+  from: 2026-06-15
+  to: 2026-06-21
+stats:
+  totalCommits: 8
+  totalAdditions: 7086
+  totalDeletions: 1795
+  prsOpened: 1
+  prsMerged: 0
+  prsReviewed: 0
+  issuesOpened: 0
+  issuesClosed: 0
+dailyCommits:
+  - date: 2026-06-15
+    count: 1
+  - date: 2026-06-16
+    count: 7
+  - date: 2026-06-17
+    count: 3
+  - date: 2026-06-18
+    count: 10
+  - date: 2026-06-19
+    count: 1
+  - date: 2026-06-20
+    count: 2
+  - date: 2026-06-21
+    count: 1
+repositories:
+  - name: liuzhen9320/opengrok
+    commits: 0
+    prsOpened: 1
+    prsMerged: 0
+    issuesOpened: 0
+    issuesClosed: 0
+    url: https://github.com/liuzhen9320/opengrok
+pullRequests:
+  - title: sync
+    body: null
+    url: https://github.com/liuzhen9320/opengrok/pull/1
+    repository: liuzhen9320/opengrok
+    state: open
+    labels: []
+    additions: 7086
+    deletions: 1795
+    changedFiles: 109
+    author: liuzhen9320
+    createdAt: 2026-05-04T11:59:42Z
+    mergedAt: null
+issues: []
+events: []
+commitMessages: []
+releases: []
+externalContributions: []
