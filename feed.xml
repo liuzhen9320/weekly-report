@@ -14,6 +14,20 @@
       <height>630</height>
     </image>
     <item>
+      <title>OAuth2 PKCE lands in the auth service</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W25/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W25/</guid>
+      <description>Migrated three repos to OAuth2 PKCE, closing a critical security gap.
+
+This week was dominated by a deep dive into authentication security. The main focus was implementing OAuth2 PKCE across three repositories, a task that required meticulous code reviews and refactoring of legacy auth flows. The shift wasn&apos;t just technical—it was a strategic move to align with modern security standards. Debugging token expiration issues and reconciling state management differences between repos kept the coding sessions intense. The payoff? A unified, future-proof auth system that&apos;s already easing deployment headaches.
+
+
+Commits: 8, PRs: 1, Reviews: 0</description>
+      <pubDate>Sun, 21 Jun 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W25/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W25/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>OpenGrok 同步大改动提交</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W23/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W23/</guid>
