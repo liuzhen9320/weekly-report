@@ -1,0 +1,54 @@
+title: opengrok sync PR injects 7k lines of change
+subtitle: A single PR in liuzhen9320/opengrok adds 7,090 lines and deletes 1,795, reshaping the codebase
+overview: |
+  第一天的提交只有一条记录，周二仓库几乎安静，随后周三到周五的提交量开始攀升。  
+  6月22日，我在 opengrok 仓库打开了一个名为 “sync” 的 PR，里面包含 7,090 行新增和 1,795 行删除，跨越 109 个文件。  
+  本周的所有 8 次提交都集中在这个 PR 上，等待审核与合并，未来几天将决定它是否能顺利进入主干。  
+summaries:
+  - type: repo-summary
+    heading: opengrok dominates the repo activity
+    body: 全部 8 次提交和 1 条 PR 都集中在 liuzhen9320/opengrok。 这一次的提交量是本周最重的，也是我本周唯一的贡献。
+    chips:
+      - label: PRs
+        value: "1"
+        color: default
+      - label: Commits
+        value: "8"
+        color: default
+  - type: deep-dive
+    heading: Massive refactor in sync PR
+    body: 同步 PR 涉及 109 个文件，整体改动幅度巨大。 代码重构、配置迁移以及文档更新一起推进，预计会对后续开发产生深远影响。
+    chips:
+      - label: Lines
+        value: +7090 -1795
+        color: default
+      - label: Files
+        value: "109"
+        color: default
+  - type: activity-pattern
+    heading: Commit volcano on Friday
+    body: 6 月 26 日是提交高峰日，连续 7 次提交让仓库瞬间变成代码熔岩。 这一天的高强度工作主要是为 sync PR 做最终调试和细节完善。
+    chips:
+      - label: peak
+        value: Jun 26 7
+        color: green
+highlights:
+  - type: pr
+    title: sync
+    repo: liuzhen9320/opengrok
+    meta: opened Jun 22 · +7090 -1795 · 109 files
+    body: 这是本周唯一的 PR，覆盖了整个项目的核心模块，带来大量新增与删除。 它的大小和复杂度让我对后续的审核流程充满期待。
+    url: https://github.com/liuzhen9320/opengrok/pull/1
+ticker:
+  - label: BIG CHANGES
+    text: "@liuzhen9320 drops 1,795 lines from opengrok, adding 7,090 new ones in one PR"
+  - label: INSTANT DESTRUCTION
+    text: "@liuzhen9320 pushes 109 file changes in opengrok, rewriting the entire repo"
+  - label: FIRE SALE
+    text: "@liuzhen9320 commits 7 times on Friday, turning the repo into a coding bonfire"
+  - label: CODE BOMB
+    text: "@liuzhen9320 opens sync PR, adding 7k lines that will blow future merge conflicts"
+  - label: DEVOPS DRAMA
+    text: "@liuzhen9320 moves opengrok to a new architecture, but still waiting for the merge"
+  - label: PERSONAL POWER
+    text: "@liuzhen9320 completes 8 commits, 7 of them on a single day—pure developer sorcery"
