@@ -14,6 +14,22 @@
       <height>630</height>
     </image>
     <item>
+      <title>opengrok sync PR injects 7k lines of change</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W26/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W26/</guid>
+      <description>A single PR in liuzhen9320/opengrok adds 7,090 lines and deletes 1,795, reshaping the codebase
+
+第一天的提交只有一条记录，周二仓库几乎安静，随后周三到周五的提交量开始攀升。  
+6月22日，我在 opengrok 仓库打开了一个名为 “sync” 的 PR，里面包含 7,090 行新增和 1,795 行删除，跨越 109 个文件。  
+本周的所有 8 次提交都集中在这个 PR 上，等待审核与合并，未来几天将决定它是否能顺利进入主干。  
+
+
+Commits: 8, PRs: 1, Reviews: 0</description>
+      <pubDate>Sun, 28 Jun 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W26/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W26/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>OAuth2 PKCE lands in the auth service</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W25/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W25/</guid>
