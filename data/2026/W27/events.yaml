@@ -58,3 +58,102 @@
     kind: push
     ref: refs/heads/main
     commits: []
+- id: "11214040147"
+  type: WatchEvent
+  repo: smaniches/semantic-scholar-mcp
+  createdAt: 2026-07-01T09:53:07Z
+  payload:
+    kind: generic
+    action: started
+- id: "11212995278"
+  type: WatchEvent
+  repo: Frumple/mc-plugin-finder
+  createdAt: 2026-07-01T09:30:10Z
+  payload:
+    kind: generic
+    action: started
+- id: "11212740485"
+  type: WatchEvent
+  repo: openags/paper-search-mcp
+  createdAt: 2026-07-01T09:24:55Z
+  payload:
+    kind: generic
+    action: started
+- id: "11212180355"
+  type: WatchEvent
+  repo: antonmedv/gitmal
+  createdAt: 2026-07-01T09:12:49Z
+  payload:
+    kind: generic
+    action: started
+- id: "11212102921"
+  type: WatchEvent
+  repo: allyourcodebase/nasm
+  createdAt: 2026-07-01T09:11:07Z
+  payload:
+    kind: generic
+    action: started
+- id: "11209217557"
+  type: WatchEvent
+  repo: DDVD233/Daria
+  createdAt: 2026-07-01T08:06:52Z
+  payload:
+    kind: generic
+    action: started
+- id: "11204890472"
+  type: WatchEvent
+  repo: albert4719/PlayerTask
+  createdAt: 2026-07-01T06:21:21Z
+  payload:
+    kind: generic
+    action: started
+- id: "11202579874"
+  type: WatchEvent
+  repo: thinkst/canarytokens
+  createdAt: 2026-07-01T05:02:55Z
+  payload:
+    kind: generic
+    action: started
+- id: "11202529602"
+  type: WatchEvent
+  repo: thinkst/opencanary
+  createdAt: 2026-07-01T05:00:52Z
+  payload:
+    kind: generic
+    action: started
+- id: "11201517661"
+  type: WatchEvent
+  repo: emanuele-em/proxelar
+  createdAt: 2026-07-01T04:19:25Z
+  payload:
+    kind: generic
+    action: started
+- id: "11201098393"
+  type: WatchEvent
+  repo: CoreBunch/Instatic
+  createdAt: 2026-07-01T04:02:50Z
+  payload:
+    kind: generic
+    action: started
+- id: "11200884677"
+  type: WatchEvent
+  repo: orogene/orogene
+  createdAt: 2026-07-01T03:53:34Z
+  payload:
+    kind: generic
+    action: started
+- id: "11200644504"
+  type: WatchEvent
+  repo: niklas-heer/tdx
+  createdAt: 2026-07-01T03:43:03Z
+  payload:
+    kind: generic
+    action: started
+- id: "14143238921"
+  type: PushEvent
+  repo: liuzhen9320/zstar
+  createdAt: 2026-07-01T01:39:49Z
+  payload:
+    kind: push
+    ref: refs/heads/main
+    commits: []
