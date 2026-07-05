@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <title>opengrok sync PR injects 7k lines of change - 2026-06-22 - 2026-06-28</title>
+  <title>Rust tera 依赖升级冲刺，7月3日单日17次提交狂刷 - 2026-06-29 - 2026-07-05</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A single PR in liuzhen9320/opengrok adds 7,090 lines and deletes 1,795, reshaping the codebase" />
+  <meta name="description" content="在 bird-lg-rs 项目中完成 tera 2.x 版本更新，伴随330行旧代码清理" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <meta property="og:title" content="opengrok sync PR injects 7k lines of change" />
-  <meta property="og:description" content="A single PR in liuzhen9320/opengrok adds 7,090 lines and deletes 1,795, reshaping the codebase" />
-  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W26/og.png" />
+  <meta property="og:title" content="Rust tera 依赖升级冲刺，7月3日单日17次提交狂刷" />
+  <meta property="og:description" content="在 bird-lg-rs 项目中完成 tera 2.x 版本更新，伴随330行旧代码清理" />
+  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W27/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W26/" />
+  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W27/" />
   <meta property="og:site_name" content="liuzhen9320 Weekly Reports" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="opengrok sync PR injects 7k lines of change" />
-  <meta name="twitter:description" content="A single PR in liuzhen9320/opengrok adds 7,090 lines and deletes 1,795, reshaping the codebase" />
-  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W26/og.png" />
+  <meta name="twitter:title" content="Rust tera 依赖升级冲刺，7月3日单日17次提交狂刷" />
+  <meta name="twitter:description" content="在 bird-lg-rs 项目中完成 tera 2.x 版本更新，伴随330行旧代码清理" />
+  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W27/og.png" />
   <meta name="author" content="liuzhen9320" />
   <meta name="theme-color" content="#050505" />
-  <meta property="article:published_time" content="2026-06-28" />
+  <meta property="article:published_time" content="2026-07-05" />
   <meta property="article:author" content="https://github.com/liuzhen9320" />
   <link rel="icon" href="https://avatars.githubusercontent.com/u/141824471?u&#x3D;f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&amp;v&#x3D;4" />
-  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W26/" />
+  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W27/" />
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://liuzhen9320.github.io/weekly-report/feed.xml" />
   <meta name="view-transition" content="same-origin" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "opengrok sync PR injects 7k lines of change",
-    "description": "A single PR in liuzhen9320/opengrok adds 7,090 lines and deletes 1,795, reshaping the codebase",
+    "headline": "Rust tera 依赖升级冲刺，7月3日单日17次提交狂刷",
+    "description": "在 bird-lg-rs 项目中完成 tera 2.x 版本更新，伴随330行旧代码清理",
     "author": {
       "@type": "Person",
       "name": "liuzhen9320",
       "url": "https://github.com/liuzhen9320"
     },
-    "image": "https://liuzhen9320.github.io/weekly-report/2026/W26/og.png",
-    "datePublished": "2026-06-28"
+    "image": "https://liuzhen9320.github.io/weekly-report/2026/W27/og.png",
+    "datePublished": "2026-07-05"
   }
   </script>
   <script type="application/ld+json">
@@ -48,7 +48,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://liuzhen9320.github.io/weekly-report/" },
-      { "@type": "ListItem", "position": 2, "name": "2026-06-22 - 2026-06-28", "item": "https://liuzhen9320.github.io/weekly-report/2026/W26/" }
+      { "@type": "ListItem", "position": 2, "name": "2026-06-29 - 2026-07-05", "item": "https://liuzhen9320.github.io/weekly-report/2026/W27/" }
     ]
   }
   </script>
@@ -597,37 +597,54 @@
         <span>liuzhen9320</span>
       </a>
       <span class="header-sep">&middot;</span>
-      <span class="header-date">2026-06-22 - 2026-06-28</span>
+      <span class="header-date">2026-06-29 - 2026-07-05</span>
     </div>
-    <h1 class="header-title">opengrok sync PR injects 7k lines of change</h1>
-    <p class="header-sub">A single PR in liuzhen9320/opengrok adds 7,090 lines and deletes 1,795, reshaping the codebase</p>
+    <h1 class="header-title">Rust tera 依赖升级冲刺，7月3日单日17次提交狂刷</h1>
+    <p class="header-sub">在 bird-lg-rs 项目中完成 tera 2.x 版本更新，伴随330行旧代码清理</p>
   </div>
 </div>
 
 <main id="main-content">
 <article class="page">
   <div class="overview">
-    <p>第一天的提交只有一条记录，周二仓库几乎安静，随后周三到周五的提交量开始攀升。<br />6月22日，我在 opengrok 仓库打开了一个名为 “sync” 的 PR，里面包含 7,090 行新增和 1,795 行删除，跨越 109 个文件。<br />本周的所有 8 次提交都集中在这个 PR 上，等待审核与合并，未来几天将决定它是否能顺利进入主干。  </p>
+    <p>本周@liuzhen9320专注于 bird-lg-rs Rust项目的核心依赖升级，这项工作牵动了整个项目的命脉。从6月29日开始的缓慢铺垫，到7月3日的爆发式开发——单日17次提交将项目推向重大版本迁移的临界点。</p>
+  <p>这次升级涉及ter crate从1.x迁移到2.x，代码变更+14行但删减-332行，意味着大量过时代码被清理。从技术角度看，这是项目现代化的关键一步，为后续的功能扩展奠定了更稳固的基础。</p>
+  <p>值得一提的是，这周没有打开新的PR或issue，全部精力集中在这个单一的依赖更新上。这种“憋到底”的开发节奏，反映出对代码质量的执着追求。</p>
   
   </div>
   <div class="section-group">
     <div class="section-group-header">
       <h2 class="section-group-title">摘要</h2>
       <div class="section-group-line"></div>
-      <span class="section-group-count">3 个部分</span>
+      <span class="section-group-count">4 个部分</span>
     </div>
   
     <div class="section-summary">
+      <div class="section-type">deep-dive</div>
+      <div class="section-heading">ter crate 2.x 重大升级</div>
+      <div class="section-body">完成从ter 1.x到2.x的版本跳跃，这通常需要适配API变更。项目更新了2个文件，虽然代码增量不多，但涉及依赖项的根本性重构。</div>
+  
+  
+  
+  
+      <div class="data-chips">
+        <span class="chip"><span class="chip-label">变更规模</span> <span class="chip-value chip-red">+14 -332</span></span>
+        <span class="chip"><span class="chip-label">文件数</span> <span class="chip-value chip-blue">2 files</span></span>
+        <span class="chip"><span class="chip-label">标签</span> <span class="chip-value chip-yellow">dependencies, major, version-update</span></span>
+        <span class="chip"><span class="chip-label">状态</span> <span class="chip-value chip-gray">closed</span></span>
+      </div>
+    </div>
+    <div class="section-summary">
       <div class="section-type">repo-summary</div>
-      <div class="section-heading">opengrok dominates the repo activity</div>
-      <div class="section-body">全部 8 次提交和 1 条 PR 都集中在 liuzhen9320/opengrok。 这一次的提交量是本周最重的，也是我本周唯一的贡献。</div>
+      <div class="section-heading">bird-lg-rs 项目聚焦度</div>
+      <div class="section-body">整个周度只有一个仓库被激活，全部围绕依赖升级展开。这种单点聚焦的开发模式在维护型项目中很常见，确保核心功能的稳定性。</div>
   
   
   
       <div class="repo-bars">
         <div class="repo-bar-item">
           <div class="repo-bar-header">
-            <span class="repo-bar-label">liuzhen9320/opengrok</span>
+            <span class="repo-bar-label">liuzhen9320/bird-lg-rs</span>
             <span class="repo-bar-value">1 PRs</span>
           </div>
           <div class="repo-bar-track">
@@ -637,55 +654,43 @@
       </div>
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">PRs</span> <span class="chip-value chip-default">1</span></span>
-        <span class="chip"><span class="chip-label">Commits</span> <span class="chip-value chip-default">8</span></span>
-      </div>
-    </div>
-    <div class="section-summary">
-      <div class="section-type">deep-dive</div>
-      <div class="section-heading">Massive refactor in sync PR</div>
-      <div class="section-body">同步 PR 涉及 109 个文件，整体改动幅度巨大。 代码重构、配置迁移以及文档更新一起推进，预计会对后续开发产生深远影响。</div>
-  
-  
-  
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">Lines</span> <span class="chip-value chip-default">+7090 -1795</span></span>
-        <span class="chip"><span class="chip-label">Files</span> <span class="chip-value chip-default">109</span></span>
+        <span class="chip"><span class="chip-label">liuzhen9320/bird-lg-rs</span> <span class="chip-value chip-default">1 PRs</span></span>
+        <span class="chip"><span class="chip-label">问题活动</span> <span class="chip-value chip-green">0 issues</span></span>
+        <span class="chip"><span class="chip-label">提交总数</span> <span class="chip-value chip-blue">11 commits</span></span>
       </div>
     </div>
     <div class="section-summary">
       <div class="section-type">activity-pattern</div>
-      <div class="section-heading">Commit volcano on Friday</div>
-      <div class="section-body">6 月 26 日是提交高峰日，连续 7 次提交让仓库瞬间变成代码熔岩。 这一天的高强度工作主要是为 sync PR 做最终调试和细节完善。</div>
+      <div class="section-heading">7月3日开发爆发</div>
+      <div class="section-body">本周最高峰集中在7月3日，完成了17次提交，是其他6天总和的3倍。这种非线性的开发节奏可能源于代码审查或测试验证的滞后，需要集中力量解决。</div>
   
       <div class="mini-heatmap">
         <div class="mh-day">
-          <div class="mh-block mh-level-1">1</div>
+          <div class="mh-block mh-level-1">2</div>
           <div class="mh-label">一</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-0">0</div>
+          <div class="mh-block mh-level-1">4</div>
           <div class="mh-label">二</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-2">3</div>
+          <div class="mh-block mh-level-1">1</div>
           <div class="mh-label">三</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-2">2</div>
+          <div class="mh-block mh-level-0">0</div>
           <div class="mh-label">四</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-4">7</div>
+          <div class="mh-block mh-level-4">17</div>
           <div class="mh-label">五</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-2">2</div>
+          <div class="mh-block mh-level-1">2</div>
           <div class="mh-label">六</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-2">2</div>
+          <div class="mh-block mh-level-1">4</div>
           <div class="mh-label">日</div>
         </div>
       </div>
@@ -693,7 +698,31 @@
   
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">peak</span> <span class="chip-value chip-green">Jun 26 7</span></span>
+        <span class="chip"><span class="chip-label">峰值日</span> <span class="chip-value chip-red">2026-07-03</span></span>
+        <span class="chip"><span class="chip-label">峰值次数</span> <span class="chip-value chip-yellow">17 commits</span></span>
+        <span class="chip"><span class="chip-label">平衡天数</span> <span class="chip-value chip-green">2026-07-02 (0)</span></span>
+      </div>
+    </div>
+    <div class="section-summary">
+      <div class="section-type">commit-summary</div>
+      <div class="section-heading">代码清理与现代化</div>
+      <div class="section-body">虽然总提交量不多，却以大幅度的代码删除为标志。-332行的删除量意味着摆脱了旧版本的束缚，为项目注入了更干净的内核。这类“减法”往往比“加法”更有价值。</div>
+  
+  
+      <div class="diff-bar">
+        <div class="diff-add" style="flex:14"></div>
+        <div class="diff-del" style="flex:332"></div>
+      </div>
+      <div class="diff-labels">
+        <span class="diff-label-add">+14</span>
+        <span class="diff-label-del">-332</span>
+      </div>
+  
+  
+      <div class="data-chips">
+        <span class="chip"><span class="chip-label">净增代码</span> <span class="chip-value chip-green">+14 lines</span></span>
+        <span class="chip"><span class="chip-label">删除代码</span> <span class="chip-value chip-red">-332 lines</span></span>
+        <span class="chip"><span class="chip-label">清理比例</span> <span class="chip-value chip-orange">96% 删除</span></span>
       </div>
     </div>
   </div>
@@ -707,9 +736,9 @@
     <div class="highlight-grid">
     <div class="highlight-card">
       <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/opengrok/pull/1" target="_blank" rel="noopener nofollow">sync</a></div>
-      <div class="highlight-meta">liuzhen9320/opengrok · opened Jun 22 · +7090 -1795 · 109 files</div>
-      <div class="highlight-body">这是本周唯一的 PR，覆盖了整个项目的核心模块，带来大量新增与删除。 它的大小和复杂度让我对后续的审核流程充满期待。</div>
+      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/32" target="_blank" rel="noopener nofollow">fix(deps): Update Rust crate tera to v2 (main)</a></div>
+      <div class="highlight-meta">liuzhen9320/bird-lg-rs · closed · +14 -332 · 2 files</div>
+      <div class="highlight-body">完成ter crate从1.x到2.x的重大版本升级，这是项目现代化的关键一步，移除了大量过时代码。</div>
     </div>
     </div>
   </div>
@@ -718,15 +747,14 @@
 
 <div class="share-bar">
   <span class="share-label">分享</span>
-  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W26/&text=opengrok%20sync%20PR%20injects%207k%20lines%20of%20change&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W26/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
-  <a href="https://bsky.app/intent/compose?text=opengrok%20sync%20PR%20injects%207k%20lines%20of%20change%20https://liuzhen9320.github.io/weekly-report/2026/W26/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
+  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W27/&text=Rust%20tera%20%E4%BE%9D%E8%B5%96%E5%8D%87%E7%BA%A7%E5%86%B2%E5%88%BA%EF%BC%8C7%E6%9C%883%E6%97%A5%E5%8D%95%E6%97%A517%E6%AC%A1%E6%8F%90%E4%BA%A4%E7%8B%82%E5%88%B7&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W27/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
+  <a href="https://bsky.app/intent/compose?text=Rust%20tera%20%E4%BE%9D%E8%B5%96%E5%8D%87%E7%BA%A7%E5%86%B2%E5%88%BA%EF%BC%8C7%E6%9C%883%E6%97%A5%E5%8D%95%E6%97%A517%E6%AC%A1%E6%8F%90%E4%BA%A4%E7%8B%82%E5%88%B7%20https://liuzhen9320.github.io/weekly-report/2026/W27/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
 </div>
 
-
 <nav class="week-nav" aria-label="Week navigation">
-  <a href="../../2026/W25/" class="week-nav-link">&larr; 上一周</a>
-  <a href="../../2026/W27/" class="week-nav-link">下一周 &rarr;</a>
+  <a href="../../2026/W26/" class="week-nav-link">&larr; 上一周</a>
+  <span></span>
 </nav>
 
 

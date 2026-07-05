@@ -14,6 +14,24 @@
       <height>630</height>
     </image>
     <item>
+      <title>Rust tera 依赖升级冲刺，7月3日单日17次提交狂刷</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W27/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W27/</guid>
+      <description>在 bird-lg-rs 项目中完成 tera 2.x 版本更新，伴随330行旧代码清理
+
+本周@liuzhen9320专注于 bird-lg-rs Rust项目的核心依赖升级，这项工作牵动了整个项目的命脉。从6月29日开始的缓慢铺垫，到7月3日的爆发式开发——单日17次提交将项目推向重大版本迁移的临界点。
+
+这次升级涉及ter crate从1.x迁移到2.x，代码变更+14行但删减-332行，意味着大量过时代码被清理。从技术角度看，这是项目现代化的关键一步，为后续的功能扩展奠定了更稳固的基础。
+
+值得一提的是，这周没有打开新的PR或issue，全部精力集中在这个单一的依赖更新上。这种“憋到底”的开发节奏，反映出对代码质量的执着追求。
+
+
+Commits: 11, PRs: 0, Reviews: 0</description>
+      <pubDate>Sun, 05 Jul 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W27/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W27/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>opengrok sync PR injects 7k lines of change</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W26/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W26/</guid>
