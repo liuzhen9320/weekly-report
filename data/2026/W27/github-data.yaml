@@ -1,0 +1,80 @@
+username: liuzhen9320
+avatarUrl: https://avatars.githubusercontent.com/u/141824471?u=f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&v=4
+profile:
+  name: liuzhen932 🇦🇶
+  bio: 只要愿意去做，人无所不通。
+  company: null
+  location: Antarctica
+  followers: 35
+  following: 28
+  publicRepos: 56
+dateRange:
+  from: 2026-06-29
+  to: 2026-07-05
+stats:
+  totalCommits: 11
+  totalAdditions: 14
+  totalDeletions: 332
+  prsOpened: 0
+  prsMerged: 0
+  prsReviewed: 0
+  issuesOpened: 0
+  issuesClosed: 0
+dailyCommits:
+  - date: 2026-06-29
+    count: 2
+  - date: 2026-06-30
+    count: 4
+  - date: 2026-07-01
+    count: 1
+  - date: 2026-07-02
+    count: 0
+  - date: 2026-07-03
+    count: 17
+  - date: 2026-07-04
+    count: 2
+  - date: 2026-07-05
+    count: 4
+repositories:
+  - name: liuzhen9320/bird-lg-rs
+    commits: 0
+    prsOpened: 1
+    prsMerged: 0
+    issuesOpened: 0
+    issuesClosed: 0
+    url: https://github.com/liuzhen9320/bird-lg-rs
+pullRequests:
+  - title: "fix(deps): Update Rust crate tera to v2 (main)"
+    body: |-
+      This PR contains the following updates:
+
+      ---
+
+      ### Configuration
+
+      📅 **Schedule**: (in timezone Asia/Shanghai)
+
+      - Branch creation
+       - At any time (no schedule defined)
+      - Automerge
+       - At any time (no schedule defined)
+
+      🚦 **Automerge**: Disabled by config. Please merge this manually once you are satisf...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/32
+    repository: liuzhen9320/bird-lg-rs
+    state: closed
+    labels:
+      - dependencies
+      - major
+      - version-update
+    additions: 14
+    deletions: 332
+    changedFiles: 2
+    author: renovate[bot]
+    createdAt: 2026-06-29T12:56:48Z
+    mergedAt: null
+issues: []
+events: []
+commitMessages: []
+releases: []
+externalContributions: []
