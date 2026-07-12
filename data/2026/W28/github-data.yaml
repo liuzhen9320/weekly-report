@@ -1,0 +1,213 @@
+username: liuzhen9320
+avatarUrl: https://avatars.githubusercontent.com/u/141824471?u=f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&v=4
+profile:
+  name: liuzhen932 🇦🇶
+  bio: 只要愿意去做，人无所不通。
+  company: null
+  location: Antarctica
+  followers: 35
+  following: 28
+  publicRepos: 57
+dateRange:
+  from: 2026-07-06
+  to: 2026-07-12
+stats:
+  totalCommits: 17
+  totalAdditions: 12
+  totalDeletions: 330
+  prsOpened: 0
+  prsMerged: 0
+  prsReviewed: 0
+  issuesOpened: 0
+  issuesClosed: 0
+dailyCommits:
+  - date: 2026-07-06
+    count: 7
+  - date: 2026-07-07
+    count: 4
+  - date: 2026-07-08
+    count: 1
+  - date: 2026-07-09
+    count: 7
+  - date: 2026-07-10
+    count: 1
+  - date: 2026-07-11
+    count: 1
+  - date: 2026-07-12
+    count: 2
+repositories:
+  - name: liuzhen9320/bird-lg-rs
+    commits: 0
+    prsOpened: 6
+    prsMerged: 0
+    issuesOpened: 0
+    issuesClosed: 0
+    url: https://github.com/liuzhen9320/bird-lg-rs
+pullRequests:
+  - title: "chore(deps)!: Update Rust crate tera (1.20.1 ➔ 2.0.0) (main)"
+    body: |-
+      This PR contains the following updates:
+
+      ---
+
+      ### Configuration
+
+      📅 **Schedule**: (in timezone Asia/Shanghai)
+
+      - Branch creation
+       - At any time (no schedule defined)
+      - Automerge
+       - At any time (no schedule defined)
+
+      🚦 **Automerge**: Disabled by config. Please merge this manually once you are satisf...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/40
+    repository: liuzhen9320/bird-lg-rs
+    state: closed
+    labels:
+      - dependencies
+    additions: 7
+    deletions: 325
+    changedFiles: 2
+    author: renovate[bot]
+    createdAt: 2026-07-06T09:46:37Z
+    mergedAt: null
+  - title: "chore(github-action): update action docker/setup-qemu-action (0611638 ➔ 96fe6ef) (main)"
+    body: |-
+      This PR contains the following updates:
+
+      ---
+
+      ### Configuration
+
+      📅 **Schedule**: (in timezone Asia/Shanghai)
+
+      - Branch creation
+       - At any time (no schedule defined)
+      - Automerge
+       - At any time (no schedule defined)
+
+      🚦 **Automerge**: Disabled by config. Please merge this manually once you are satisf...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/35
+    repository: liuzhen9320/bird-lg-rs
+    state: closed
+    labels:
+      - dependencies
+    additions: 1
+    deletions: 1
+    changedFiles: 1
+    author: renovate[bot]
+    createdAt: 2026-07-01T23:07:11Z
+    mergedAt: null
+  - title: "chore(github-action): update action docker/metadata-action (80c7e94 ➔ dc80280) (main)"
+    body: |-
+      This PR contains the following updates:
+
+      ---
+
+      ### Configuration
+
+      📅 **Schedule**: (in timezone Asia/Shanghai)
+
+      - Branch creation
+       - At any time (no schedule defined)
+      - Automerge
+       - At any time (no schedule defined)
+
+      🚦 **Automerge**: Disabled by config. Please merge this manually once you are satisf...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/37
+    repository: liuzhen9320/bird-lg-rs
+    state: closed
+    labels:
+      - dependencies
+    additions: 1
+    deletions: 1
+    changedFiles: 1
+    author: renovate[bot]
+    createdAt: 2026-07-02T11:05:51Z
+    mergedAt: null
+  - title: "chore(github-action): update action docker/login-action (650006c ➔ af1e73f) (main)"
+    body: |-
+      This PR contains the following updates:
+
+      ---
+
+      ### Configuration
+
+      📅 **Schedule**: (in timezone Asia/Shanghai)
+
+      - Branch creation
+       - At any time (no schedule defined)
+      - Automerge
+       - At any time (no schedule defined)
+
+      🚦 **Automerge**: Disabled by config. Please merge this manually once you are satisf...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/36
+    repository: liuzhen9320/bird-lg-rs
+    state: closed
+    labels:
+      - dependencies
+    additions: 1
+    deletions: 1
+    changedFiles: 1
+    author: renovate[bot]
+    createdAt: 2026-07-02T11:05:44Z
+    mergedAt: null
+  - title: "chore(github-action): update action docker/setup-buildx-action (d7f5e7f ➔ bb05f3f) (main)"
+    body: |-
+      This PR contains the following updates:
+
+      ---
+
+      ### Configuration
+
+      📅 **Schedule**: (in timezone Asia/Shanghai)
+
+      - Branch creation
+       - At any time (no schedule defined)
+      - Automerge
+       - At any time (no schedule defined)
+
+      🚦 **Automerge**: Disabled by config. Please merge this manually once you are satisf...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/38
+    repository: liuzhen9320/bird-lg-rs
+    state: closed
+    labels:
+      - dependencies
+    additions: 1
+    deletions: 1
+    changedFiles: 1
+    author: renovate[bot]
+    createdAt: 2026-07-02T17:14:42Z
+    mergedAt: null
+  - title: "chore(github-action): update action docker/build-push-action (f9f3042 ➔ 53b7df9) (main)"
+    body: |-
+      This PR contains the following updates:
+
+      ---
+
+      ### Configuration
+
+      📅 **Schedule**: (in timezone Asia/Shanghai)
+
+      - Branch creation
+       - At any time (no schedule defined)
+      - Automerge
+       - At any time (no schedule defined)
+
+      🚦 **Automerge**: Disabled by config. Please merge this manually once you are satisf...
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/34
+    repository: liuzhen9320/bird-lg-rs
+    state: closed
+    labels:
+      - dependencies
+    additions: 1
+    deletions: 1
+    changedFiles: 1
+    author: renovate[bot]
+    createdAt: 2026-07-01T23:07:04Z
+    mergedAt: null
+issues: []
+events: []
+commitMessages: []
+releases: []
+externalContributions: []

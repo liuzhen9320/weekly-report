@@ -1,0 +1,105 @@
+title: Five CI Action Bumps Land in bird-lg-rs
+subtitle: Five GitHub Actions were bumped to latest versions across the bird-lg-rs repository.
+overview: >
+  This week I focused on keeping our CI pipeline fresh by bumping several GitHub Actions dependencies in the bird-lg-rs
+  project. The activity was purely dependency‑related, with no new features or bug‑fixes merged.
+
+
+  I opened a series of small PRs, each updating a single action to its latest release. The changes were straightforward
+  but required careful testing to ensure the workflow still builds. The most intensive day was Tuesday, with seven
+  commits, followed by another burst on Thursday.
+
+
+  Overall the week was a quiet maintenance sprint, clearing technical debt and aligning our tooling with the latest
+  releases. The effort will pay off in smoother future releases and fewer version conflicts.
+summaries:
+  - type: dependency-update
+    heading: Five GitHub Actions Updated
+    body: Updated five GitHub Actions to their latest releases across the bird-lg-rs repository. Each PR was a simple
+      dependency bump, but together they keep our CI pipeline current. The updates were merged without conflicts,
+      ensuring the workflow remains stable.
+    chips:
+      - label: actions
+        value: "5"
+        color: default
+      - label: repos
+        value: "1"
+        color: default
+  - type: repo-summary
+    heading: bird-lg-rs dependency cleanup
+    body: Six dependency-related PRs were merged in the bird-lg-rs repo this week. All were automated dependency updates
+      with no manual code changes. The repo remains issue‑free with no new feature work.
+    chips:
+      - label: PRs
+        value: "6"
+        color: default
+      - label: merged
+        value: "6"
+        color: default
+  - type: activity-pattern
+    heading: Midweek Commit Surge
+    body: Commit activity spiked on Tuesday with seven commits, followed by a smaller burst on Thursday and Friday. The rest
+      of the week was lighter, with only a few isolated commits. This pattern suggests focused bursts of work
+      interspersed with maintenance.
+    chips:
+      - label: peak
+        value: Tue 7
+        color: green
+  - type: deep-dive
+    heading: CI Pipeline Modernization
+    body: The week’s updates modernized our CI pipeline by moving to the latest GitHub Actions versions. This reduces the
+      risk of deprecated APIs and improves build reliability. The changes were low‑risk but essential for long‑term
+      maintenance.
+    chips:
+      - label: tooling
+        value: GitHub Actions
+        color: default
+highlights:
+  - type: pr
+    title: "chore(deps)!: Update Rust crate tera (1.20.1 ➔ 2.0.0) (main)"
+    repo: liuzhen9320/bird-lg-rs
+    meta: +7 -325 · 2 files
+    body: This PR upgrades the tera template engine to version 2.0.0, bringing performance improvements and new features.
+      The change keeps our Rust project aligned with the latest upstream releases.
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/40
+  - type: pr
+    title: "chore(github-action): update action docker/setup-qemu-action (0611638 ➔ 96fe6ef) (main)"
+    repo: liuzhen9320/bird-lg-rs
+    meta: +1 -1 · 1 files
+    body: The setup‑qemu-action was updated to the latest commit, ensuring better support for cross‑platform builds. This
+      small bump helps avoid future compatibility issues.
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/35
+  - type: pr
+    title: "chore(github-action): update action docker/metadata-action (80c7e94 ➔ dc80280) (main)"
+    repo: liuzhen9320/bird-lg-rs
+    meta: +1 -1 · 1 files
+    body: metadata-action was refreshed to the newest version, tightening the metadata extraction process. This update
+      contributes to more accurate release artifacts.
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/37
+  - type: pr
+    title: "chore(github-action): update action docker/login-action (650006c ➔ af1e73f) (main)"
+    repo: liuzhen9320/bird-lg-rs
+    meta: +1 -1 · 1 files
+    body: login-action was bumped, improving the authentication flow for container registries. This ensures our builds can
+      push images securely.
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/36
+  - type: pr
+    title: "chore(github-action): update action docker/build-push-action (f9f3042 ➔ 53b7df9) (main)"
+    repo: liuzhen9320/bird-lg-rs
+    meta: +1 -1 · 1 files
+    body: build-push-action was updated, enhancing the Docker build and push workflow. The change brings performance tweaks
+      and newer feature support.
+    url: https://github.com/liuzhen9320/bird-lg-rs/pull/34
+ticker:
+  - label: ABSOLUTE CARNAGE
+    text: "@liuzhen9320 upgrades five GitHub Actions in a single week, keeping CI fresh and future‑proof"
+  - label: NOT A DRILL
+    text: "@liuzhen9320 merges six dependency updates to bird‑lg‑rs, silencing version‑drift warnings"
+  - label: EXPERTS BAFFLED
+    text: "@liuzhen9320 reviews no PRs but still manages to bump dependencies across the board"
+  - label: DEVELOPING
+    text: "@liuzhen9320 spikes with seven commits on Tuesday, then settles into a steady drip"
+  - label: UNPRECEDENTED
+    text: "@liuzhen9320 updates Docker Actions to the latest releases, ensuring smooth container builds"
+  - label: KEYBOARD ON FIRE
+    text: "@liuzhen9320 pushes commits at a frantic pace, averaging two per day this week"
