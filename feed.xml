@@ -14,6 +14,24 @@
       <height>630</height>
     </image>
     <item>
+      <title>Five CI Action Bumps Land in bird-lg-rs</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W28/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W28/</guid>
+      <description>Five GitHub Actions were bumped to latest versions across the bird-lg-rs repository.
+
+This week I focused on keeping our CI pipeline fresh by bumping several GitHub Actions dependencies in the bird-lg-rs project. The activity was purely dependency‑related, with no new features or bug‑fixes merged.
+
+I opened a series of small PRs, each updating a single action to its latest release. The changes were straightforward but required careful testing to ensure the workflow still builds. The most intensive day was Tuesday, with seven commits, followed by another burst on Thursday.
+
+Overall the week was a quiet maintenance sprint, clearing technical debt and aligning our tooling with the latest releases. The effort will pay off in smoother future releases and fewer version conflicts.
+
+
+Commits: 17, PRs: 0, Reviews: 0</description>
+      <pubDate>Sun, 12 Jul 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W28/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W28/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>Rust tera 依赖升级冲刺，7月3日单日17次提交狂刷</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W27/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W27/</guid>
