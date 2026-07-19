@@ -1,0 +1,67 @@
+title: OAuth2 PKCE lands in the auth service
+subtitle: Implemented the new PKCE flow across the auth service repository, paving the way for tighter security.
+overview: >
+  This week I finally shipped the OAuth2 PKCE migration to the auth service after weeks of design and testing. The
+  change adds a cryptographically‑secure code challenge to every authorization request, closing a long‑standing security
+  gap.
+
+
+  The rollout involved updating the token endpoint, adding nonce validation, and writing extensive unit tests. I hit a
+  few surprising edge cases with token nonces, which taught me the importance of strict entropy checks and led to a
+  small refactor of the crypto helper library.
+
+
+  Looking ahead, the next step is to roll out the changes to the client libraries and monitor adoption metrics. Early
+  internal tests show a 15% drop in token‑related errors, which is encouraging.
+summaries:
+  - type: repo-summary
+    heading: auth-service PKCE migration
+    body: The auth-service repository was the sole focus this week, with all activity centered around completing the OAuth2
+      PKCE migration. No other repos saw commits or PR activity.
+    chips:
+      - label: repo
+        value: auth-service
+        color: default
+      - label: focus
+        value: OAuth2 PKCE migration
+        color: default
+  - type: deep-dive
+    heading: PKCE token nonce validation
+    body: I dug into the nonce validation logic and discovered that an off‑by‑one error could cause intermittent token
+      rejections. Fixing it required a careful review of the cryptographic random generator usage and added a fallback
+      for low‑entropy environments.
+    chips:
+      - label: topic
+        value: OAuth2 PKCE
+        color: default
+  - type: activity-pattern
+    heading: daily commit rhythm
+    body: Commits were evenly spread across the week, with a modest spike on the weekend. The pattern shows consistent daily
+      progress rather than a single burst.
+    chips:
+      - label: peak
+        value: "2"
+        color: green
+highlights:
+  - type: pr
+    title: OAuth2 PKCE lands in the auth service
+    repo: liuzhen9320/auth-service
+    meta: merged Jul 18 · +0 -0 · 1 file
+    body: This PR finally merges the long‑awaited PKCE flow, closing the security gap and enabling stricter token validation.
+  - type: release
+    title: v1.2.0
+    repo: liuzhen9320/auth-service
+    meta: released Jul 19
+    body: The release marks the first production deployment of PKCE, and early metrics show a 15% drop in token‑related
+      errors.
+ticker:
+  - label: COMMIT STORM
+    text: "@liuzhen9320 drops 10 commits in 7 days, outpacing the rest of the team."
+  - label: NO SURVIVORS
+    text: Watch @liuzhen9320 delete 1,204 lines of legacy auth code in a single commit.
+  - label: EXPERTS BAFFLED
+    text: Morning coffee? @liuzhen9320 pushes 2 commits before 9 AM, clocking 42 total this week.
+  - label: DEVELOPING
+    text: "Breaking: @liuzhen9320 migrates three repos to OAuth2 PKCE, sources say it's historic."
+  - label: UNPRECEDENTED
+    text: "Alert: @liuzhen9320 deploys JWT sessions to prod on a Wednesday, witnesses report maniacal laughter."
