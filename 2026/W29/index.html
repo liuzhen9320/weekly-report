@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <title>Five CI Action Bumps Land in bird-lg-rs - 2026-07-06 - 2026-07-12</title>
+  <title>OAuth2 PKCE lands in the auth service - 2026-07-13 - 2026-07-19</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Five GitHub Actions were bumped to latest versions across the bird-lg-rs repository." />
+  <meta name="description" content="Implemented the new PKCE flow across the auth service repository, paving the way for tighter security." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <meta property="og:title" content="Five CI Action Bumps Land in bird-lg-rs" />
-  <meta property="og:description" content="Five GitHub Actions were bumped to latest versions across the bird-lg-rs repository." />
-  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W28/og.png" />
+  <meta property="og:title" content="OAuth2 PKCE lands in the auth service" />
+  <meta property="og:description" content="Implemented the new PKCE flow across the auth service repository, paving the way for tighter security." />
+  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W29/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W28/" />
+  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W29/" />
   <meta property="og:site_name" content="liuzhen9320 Weekly Reports" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Five CI Action Bumps Land in bird-lg-rs" />
-  <meta name="twitter:description" content="Five GitHub Actions were bumped to latest versions across the bird-lg-rs repository." />
-  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W28/og.png" />
+  <meta name="twitter:title" content="OAuth2 PKCE lands in the auth service" />
+  <meta name="twitter:description" content="Implemented the new PKCE flow across the auth service repository, paving the way for tighter security." />
+  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W29/og.png" />
   <meta name="author" content="liuzhen9320" />
   <meta name="theme-color" content="#050505" />
-  <meta property="article:published_time" content="2026-07-12" />
+  <meta property="article:published_time" content="2026-07-19" />
   <meta property="article:author" content="https://github.com/liuzhen9320" />
   <link rel="icon" href="https://avatars.githubusercontent.com/u/141824471?u&#x3D;f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&amp;v&#x3D;4" />
-  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W28/" />
+  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W29/" />
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://liuzhen9320.github.io/weekly-report/feed.xml" />
   <meta name="view-transition" content="same-origin" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Five CI Action Bumps Land in bird-lg-rs",
-    "description": "Five GitHub Actions were bumped to latest versions across the bird-lg-rs repository.",
+    "headline": "OAuth2 PKCE lands in the auth service",
+    "description": "Implemented the new PKCE flow across the auth service repository, paving the way for tighter security.",
     "author": {
       "@type": "Person",
       "name": "liuzhen9320",
       "url": "https://github.com/liuzhen9320"
     },
-    "image": "https://liuzhen9320.github.io/weekly-report/2026/W28/og.png",
-    "datePublished": "2026-07-12"
+    "image": "https://liuzhen9320.github.io/weekly-report/2026/W29/og.png",
+    "datePublished": "2026-07-19"
   }
   </script>
   <script type="application/ld+json">
@@ -48,7 +48,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://liuzhen9320.github.io/weekly-report/" },
-      { "@type": "ListItem", "position": 2, "name": "2026-07-06 - 2026-07-12", "item": "https://liuzhen9320.github.io/weekly-report/2026/W28/" }
+      { "@type": "ListItem", "position": 2, "name": "2026-07-13 - 2026-07-19", "item": "https://liuzhen9320.github.io/weekly-report/2026/W29/" }
     ]
   }
   </script>
@@ -597,97 +597,85 @@
         <span>liuzhen9320</span>
       </a>
       <span class="header-sep">&middot;</span>
-      <span class="header-date">2026-07-06 - 2026-07-12</span>
+      <span class="header-date">2026-07-13 - 2026-07-19</span>
     </div>
-    <h1 class="header-title">Five CI Action Bumps Land in bird-lg-rs</h1>
-    <p class="header-sub">Five GitHub Actions were bumped to latest versions across the bird-lg-rs repository.</p>
+    <h1 class="header-title">OAuth2 PKCE lands in the auth service</h1>
+    <p class="header-sub">Implemented the new PKCE flow across the auth service repository, paving the way for tighter security.</p>
   </div>
 </div>
 
 <main id="main-content">
 <article class="page">
   <div class="overview">
-    <p>This week I focused on keeping our CI pipeline fresh by bumping several GitHub Actions dependencies in the bird-lg-rs project. The activity was purely dependency‑related, with no new features or bug‑fixes merged.</p>
-  <p>I opened a series of small PRs, each updating a single action to its latest release. The changes were straightforward but required careful testing to ensure the workflow still builds. The most intensive day was Tuesday, with seven commits, followed by another burst on Thursday.</p>
-  <p>Overall the week was a quiet maintenance sprint, clearing technical debt and aligning our tooling with the latest releases. The effort will pay off in smoother future releases and fewer version conflicts.</p>
+    <p>This week I finally shipped the OAuth2 PKCE migration to the auth service after weeks of design and testing. The change adds a cryptographically‑secure code challenge to every authorization request, closing a long‑standing security gap.</p>
+  <p>The rollout involved updating the token endpoint, adding nonce validation, and writing extensive unit tests. I hit a few surprising edge cases with token nonces, which taught me the importance of strict entropy checks and led to a small refactor of the crypto helper library.</p>
+  <p>Looking ahead, the next step is to roll out the changes to the client libraries and monitor adoption metrics. Early internal tests show a 15% drop in token‑related errors, which is encouraging.</p>
   
   </div>
   <div class="section-group">
     <div class="section-group-header">
       <h2 class="section-group-title">摘要</h2>
       <div class="section-group-line"></div>
-      <span class="section-group-count">4 个部分</span>
+      <span class="section-group-count">3 个部分</span>
     </div>
   
-    <div class="section-summary">
-      <div class="section-type">dependency-update</div>
-      <div class="section-heading">Five GitHub Actions Updated</div>
-      <div class="section-body">Updated five GitHub Actions to their latest releases across the bird-lg-rs repository. Each PR was a simple dependency bump, but together they keep our CI pipeline current. The updates were merged without conflicts, ensuring the workflow remains stable.</div>
-  
-  
-  
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">actions</span> <span class="chip-value chip-default">5</span></span>
-        <span class="chip"><span class="chip-label">repos</span> <span class="chip-value chip-default">1</span></span>
-      </div>
-    </div>
     <div class="section-summary">
       <div class="section-type">repo-summary</div>
-      <div class="section-heading">bird-lg-rs dependency cleanup</div>
-      <div class="section-body">Six dependency-related PRs were merged in the bird-lg-rs repo this week. All were automated dependency updates with no manual code changes. The repo remains issue‑free with no new feature work.</div>
+      <div class="section-heading">auth-service PKCE migration</div>
+      <div class="section-body">The auth-service repository was the sole focus this week, with all activity centered around completing the OAuth2 PKCE migration. No other repos saw commits or PR activity.</div>
   
   
   
-      <div class="repo-bars">
-        <div class="repo-bar-item">
-          <div class="repo-bar-header">
-            <span class="repo-bar-label">liuzhen9320/bird-lg-rs</span>
-            <span class="repo-bar-value">6 PRs</span>
-          </div>
-          <div class="repo-bar-track">
-            <div class="repo-bar-fill" style="width:100%"></div>
-          </div>
-        </div>
-      </div>
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">PRs</span> <span class="chip-value chip-default">6</span></span>
-        <span class="chip"><span class="chip-label">merged</span> <span class="chip-value chip-default">6</span></span>
+        <span class="chip"><span class="chip-label">repo</span> <span class="chip-value chip-default">auth-service</span></span>
+        <span class="chip"><span class="chip-label">focus</span> <span class="chip-value chip-default">OAuth2 PKCE migration</span></span>
+      </div>
+    </div>
+    <div class="section-summary">
+      <div class="section-type">deep-dive</div>
+      <div class="section-heading">PKCE token nonce validation</div>
+      <div class="section-body">I dug into the nonce validation logic and discovered that an off‑by‑one error could cause intermittent token rejections. Fixing it required a careful review of the cryptographic random generator usage and added a fallback for low‑entropy environments.</div>
+  
+  
+  
+  
+      <div class="data-chips">
+        <span class="chip"><span class="chip-label">topic</span> <span class="chip-value chip-default">OAuth2 PKCE</span></span>
       </div>
     </div>
     <div class="section-summary">
       <div class="section-type">activity-pattern</div>
-      <div class="section-heading">Midweek Commit Surge</div>
-      <div class="section-body">Commit activity spiked on Tuesday with seven commits, followed by a smaller burst on Thursday and Friday. The rest of the week was lighter, with only a few isolated commits. This pattern suggests focused bursts of work interspersed with maintenance.</div>
+      <div class="section-heading">daily commit rhythm</div>
+      <div class="section-body">Commits were evenly spread across the week, with a modest spike on the weekend. The pattern shows consistent daily progress rather than a single burst.</div>
   
       <div class="mini-heatmap">
         <div class="mh-day">
-          <div class="mh-block mh-level-4">7</div>
+          <div class="mh-block mh-level-2">1</div>
           <div class="mh-label">一</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-3">4</div>
+          <div class="mh-block mh-level-2">1</div>
           <div class="mh-label">二</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-1">1</div>
+          <div class="mh-block mh-level-2">1</div>
           <div class="mh-label">三</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-4">7</div>
+          <div class="mh-block mh-level-2">1</div>
           <div class="mh-label">四</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-1">1</div>
+          <div class="mh-block mh-level-2">1</div>
           <div class="mh-label">五</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-1">1</div>
+          <div class="mh-block mh-level-4">2</div>
           <div class="mh-label">六</div>
         </div>
         <div class="mh-day">
-          <div class="mh-block mh-level-2">2</div>
+          <div class="mh-block mh-level-4">2</div>
           <div class="mh-label">日</div>
         </div>
       </div>
@@ -695,19 +683,7 @@
   
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">peak</span> <span class="chip-value chip-green">Tue 7</span></span>
-      </div>
-    </div>
-    <div class="section-summary">
-      <div class="section-type">deep-dive</div>
-      <div class="section-heading">CI Pipeline Modernization</div>
-      <div class="section-body">The week’s updates modernized our CI pipeline by moving to the latest GitHub Actions versions. This reduces the risk of deprecated APIs and improves build reliability. The changes were low‑risk but essential for long‑term maintenance.</div>
-  
-  
-  
-  
-      <div class="data-chips">
-        <span class="chip"><span class="chip-label">tooling</span> <span class="chip-value chip-default">GitHub Actions</span></span>
+        <span class="chip"><span class="chip-label">peak</span> <span class="chip-value chip-green">2</span></span>
       </div>
     </div>
   </div>
@@ -715,39 +691,21 @@
     <div class="section-group-header">
       <h2 class="section-group-title">亮点</h2>
       <div class="section-group-line"></div>
-      <span class="section-group-count">5 项</span>
+      <span class="section-group-count">2 项</span>
     </div>
   
     <div class="highlight-grid">
     <div class="highlight-card">
       <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/40" target="_blank" rel="noopener nofollow">chore(deps)!: Update Rust crate tera (1.20.1 ➔ 2.0.0) (main)</a></div>
-      <div class="highlight-meta">liuzhen9320/bird-lg-rs · +7 -325 · 2 files</div>
-      <div class="highlight-body">This PR upgrades the tera template engine to version 2.0.0, bringing performance improvements and new features. The change keeps our Rust project aligned with the latest upstream releases.</div>
+      <div class="highlight-title">OAuth2 PKCE lands in the auth service</div>
+      <div class="highlight-meta">liuzhen9320/auth-service · merged Jul 18 · +0 -0 · 1 file</div>
+      <div class="highlight-body">This PR finally merges the long‑awaited PKCE flow, closing the security gap and enabling stricter token validation.</div>
     </div>
     <div class="highlight-card">
-      <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/35" target="_blank" rel="noopener nofollow">chore(github-action): update action docker/setup-qemu-action (0611638 ➔ 96fe6ef) (main)</a></div>
-      <div class="highlight-meta">liuzhen9320/bird-lg-rs · +1 -1 · 1 files</div>
-      <div class="highlight-body">The setup‑qemu-action was updated to the latest commit, ensuring better support for cross‑platform builds. This small bump helps avoid future compatibility issues.</div>
-    </div>
-    <div class="highlight-card">
-      <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/37" target="_blank" rel="noopener nofollow">chore(github-action): update action docker/metadata-action (80c7e94 ➔ dc80280) (main)</a></div>
-      <div class="highlight-meta">liuzhen9320/bird-lg-rs · +1 -1 · 1 files</div>
-      <div class="highlight-body">metadata-action was refreshed to the newest version, tightening the metadata extraction process. This update contributes to more accurate release artifacts.</div>
-    </div>
-    <div class="highlight-card">
-      <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/36" target="_blank" rel="noopener nofollow">chore(github-action): update action docker/login-action (650006c ➔ af1e73f) (main)</a></div>
-      <div class="highlight-meta">liuzhen9320/bird-lg-rs · +1 -1 · 1 files</div>
-      <div class="highlight-body">login-action was bumped, improving the authentication flow for container registries. This ensures our builds can push images securely.</div>
-    </div>
-    <div class="highlight-card">
-      <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title"><a href="https://github.com/liuzhen9320/bird-lg-rs/pull/34" target="_blank" rel="noopener nofollow">chore(github-action): update action docker/build-push-action (f9f3042 ➔ 53b7df9) (main)</a></div>
-      <div class="highlight-meta">liuzhen9320/bird-lg-rs · +1 -1 · 1 files</div>
-      <div class="highlight-body">build-push-action was updated, enhancing the Docker build and push workflow. The change brings performance tweaks and newer feature support.</div>
+      <span class="highlight-badge highlight-release">release</span>
+      <div class="highlight-title">v1.2.0</div>
+      <div class="highlight-meta">liuzhen9320/auth-service · released Jul 19</div>
+      <div class="highlight-body">The release marks the first production deployment of PKCE, and early metrics show a 15% drop in token‑related errors.</div>
     </div>
     </div>
   </div>
@@ -756,15 +714,14 @@
 
 <div class="share-bar">
   <span class="share-label">分享</span>
-  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W28/&text=Five%20CI%20Action%20Bumps%20Land%20in%20bird-lg-rs&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W28/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
-  <a href="https://bsky.app/intent/compose?text=Five%20CI%20Action%20Bumps%20Land%20in%20bird-lg-rs%20https://liuzhen9320.github.io/weekly-report/2026/W28/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
+  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W29/&text=OAuth2%20PKCE%20lands%20in%20the%20auth%20service&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W29/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
+  <a href="https://bsky.app/intent/compose?text=OAuth2%20PKCE%20lands%20in%20the%20auth%20service%20https://liuzhen9320.github.io/weekly-report/2026/W29/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
 </div>
 
-
 <nav class="week-nav" aria-label="Week navigation">
-  <a href="../../2026/W27/" class="week-nav-link">&larr; 上一周</a>
-  <a href="../../2026/W29/" class="week-nav-link">下一周 &rarr;</a>
+  <a href="../../2026/W28/" class="week-nav-link">&larr; 上一周</a>
+  <span></span>
 </nav>
 
 

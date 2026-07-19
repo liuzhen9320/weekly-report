@@ -14,6 +14,24 @@
       <height>630</height>
     </image>
     <item>
+      <title>OAuth2 PKCE lands in the auth service</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W29/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W29/</guid>
+      <description>Implemented the new PKCE flow across the auth service repository, paving the way for tighter security.
+
+This week I finally shipped the OAuth2 PKCE migration to the auth service after weeks of design and testing. The change adds a cryptographically‑secure code challenge to every authorization request, closing a long‑standing security gap.
+
+The rollout involved updating the token endpoint, adding nonce validation, and writing extensive unit tests. I hit a few surprising edge cases with token nonces, which taught me the importance of strict entropy checks and led to a small refactor of the crypto helper library.
+
+Looking ahead, the next step is to roll out the changes to the client libraries and monitor adoption metrics. Early internal tests show a 15% drop in token‑related errors, which is encouraging.
+
+
+Commits: 10, PRs: 0, Reviews: 0</description>
+      <pubDate>Sun, 19 Jul 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W29/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W29/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>Five CI Action Bumps Land in bird-lg-rs</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W28/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W28/</guid>
