@@ -14,6 +14,22 @@
       <height>630</height>
     </image>
     <item>
+      <title>9 commits in a single week</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W30/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W30/</guid>
+      <description>liuzhen9320 powered through a quiet coding sprint with no PRs merged but a steady stream of commits.
+
+This week felt like a low‑key marathon rather than a sprint. The developer kept the engine humming with nine small pushes across the codebase, none of which triggered a merge or review storm.
+The lack of PR activity didn&apos;t mean stagnation; instead, it highlighted a focus on incremental tweaks and perhaps some behind‑the‑scenes cleanup that didn&apos;t need a pull request.
+Even without flashy merges, the steady daily commit rhythm set the stage for the upcoming push next week.
+
+
+Commits: 9, PRs: 0, Reviews: 0</description>
+      <pubDate>Sun, 26 Jul 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W30/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W30/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>OAuth2 PKCE lands in the auth service</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W29/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W29/</guid>
