@@ -14,6 +14,24 @@
       <height>630</height>
     </image>
     <item>
+      <title>Opening a massive sync PR in opengrok</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W32/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W32/</guid>
+      <description>One PR adds over 7k lines while touching 110 files to bring the OpenGrok fork up to date.
+
+The week kicked off with a burst of activity on Monday, as I dove into synchronizing my opengrok fork with upstream changes. What started as a routine update quickly ballooned into a massive diff, touching over a hundred files and adding thousands of lines of code. By midweek the PR was open, sitting quietly while I chipped away at smaller commits and kept the momentum going.
+
+Despite the PR being the sole open contribution, the rest of the week was filled with steady, bite-sized commits that kept the repo ticking. There were no reviews or issues to juggle, letting me focus on the sheer volume of changes and the pattern of my own workflow. The contrast between the single huge PR and the steady trickle of commits made the week feel like a sprint followed by a jog.
+
+Looking ahead, the sync PR sets the stage for future feature work in opengrok, clearing out technical debt and aligning the codebase with recent upstream improvements. It’s a foundational step that should make downstream development smoother, even if the immediate week felt a bit lopsided in terms of collaboration.
+
+
+Commits: 12, PRs: 1, Reviews: 0</description>
+      <pubDate>Sun, 09 Aug 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W32/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W32/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>完成 9 次提交，行数持平</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W31/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W31/</guid>
