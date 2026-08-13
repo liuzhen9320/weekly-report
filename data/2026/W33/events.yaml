@@ -165,3 +165,89 @@
   payload:
     kind: generic
     action: started
+- id: "13233995214"
+  type: WatchEvent
+  repo: Nagi-ovo/dsh-ads
+  createdAt: 2026-08-13T14:26:42Z
+  payload:
+    kind: generic
+    action: started
+- id: "13233985777"
+  type: WatchEvent
+  repo: huiliyi37/dsh-tianshu-tui
+  createdAt: 2026-08-13T14:26:32Z
+  payload:
+    kind: generic
+    action: started
+- id: "13233982274"
+  type: WatchEvent
+  repo: taxueseek/argo
+  createdAt: 2026-08-13T14:26:28Z
+  payload:
+    kind: generic
+    action: started
+- id: "13233976893"
+  type: WatchEvent
+  repo: Anionex/dsh-vision-toolkit
+  createdAt: 2026-08-13T14:26:23Z
+  payload:
+    kind: generic
+    action: started
+- id: "13233974036"
+  type: WatchEvent
+  repo: pulseaiclub/phi
+  createdAt: 2026-08-13T14:26:19Z
+  payload:
+    kind: generic
+    action: started
+- id: "13233970999"
+  type: WatchEvent
+  repo: 0xsline/awesome-deepseek-harness
+  createdAt: 2026-08-13T14:26:17Z
+  payload:
+    kind: generic
+    action: started
+- id: "13233938936"
+  type: WatchEvent
+  repo: zhu1090093659/dsh-web-ui
+  createdAt: 2026-08-13T14:25:44Z
+  payload:
+    kind: generic
+    action: started
+- id: "13233470888"
+  type: WatchEvent
+  repo: deepseek-ai/deepseek-harness
+  createdAt: 2026-08-13T14:17:38Z
+  payload:
+    kind: generic
+    action: started
+- id: "13221015353"
+  type: WatchEvent
+  repo: InterNetNews/inn
+  createdAt: 2026-08-13T10:15:30Z
+  payload:
+    kind: generic
+    action: started
+- id: "13221007103"
+  type: WatchEvent
+  repo: ucrawler/nntplexer
+  createdAt: 2026-08-13T10:15:20Z
+  payload:
+    kind: generic
+    action: started
+- id: "17530955831"
+  type: PushEvent
+  repo: liuzhen9320/zstar
+  createdAt: 2026-08-13T03:26:28Z
+  payload:
+    kind: push
+    ref: refs/heads/main
+    commits: []
+- id: "17530753652"
+  type: PushEvent
+  repo: liuzhen9320/zstar
+  createdAt: 2026-08-13T03:21:27Z
+  payload:
+    kind: push
+    ref: refs/heads/main
+    commits: []
