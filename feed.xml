@@ -14,6 +14,24 @@
       <height>630</height>
     </image>
     <item>
+      <title>Four‑commit Monday fuels 10‑commit week</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W33/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W33/</guid>
+      <description>A steady rhythm of daily pushes kept the pipeline moving without a single PR merge.
+
+This week was all about raw commit volume. I logged ten commits spread across seven days, with a noticeable surge on Monday and a quiet Tuesday before a modest rebound toward the weekend.
+
+The pattern shows a classic ‘burst‑then‑coast’ rhythm: a heavy push early, a dip, then a steady cadence that kept the pipeline flowing without any merges or reviews to distract. It felt like sprinting in short bursts rather than a marathon.
+
+Looking ahead, the consistency suggests I can keep this cadence going, especially as I plan to focus on the core API repo for upcoming feature work.
+
+
+Commits: 10, PRs: 0, Reviews: 0</description>
+      <pubDate>Sun, 16 Aug 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W33/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W33/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>Opening a massive sync PR in opengrok</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W32/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W32/</guid>
