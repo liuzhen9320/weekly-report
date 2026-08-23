@@ -14,6 +14,20 @@
       <height>630</height>
     </image>
     <item>
+      <title>OAuth2 PKCE lands in the auth service</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W34/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W34/</guid>
+      <description>Migrated three repos to OAuth2 PKCE in a 48-hour sprint
+
+This week was dominated by OAuth2 PKCE implementation across three critical repositories. The auth service became the central focus, with PRs landing in both internal and third-party systems. The work required deep dives into token handling and endpoint security, but the payoff was immediate: our login flow now passes all compliance checks. Late-night debugging sessions on cross-origin request issues made for dramatic hours.
+
+
+Commits: 6, PRs: 1, Reviews: 0</description>
+      <pubDate>Sun, 23 Aug 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W34/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W34/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>Four‑commit Monday fuels 10‑commit week</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W33/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W33/</guid>
