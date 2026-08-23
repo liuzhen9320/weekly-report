@@ -1,0 +1,65 @@
+title: OAuth2 PKCE lands in the auth service
+subtitle: Migrated three repos to OAuth2 PKCE in a 48-hour sprint
+overview: >
+  This week was dominated by OAuth2 PKCE implementation across three critical repositories. The auth service became the
+  central focus, with PRs landing in both internal and third-party systems. The work required deep dives into token
+  handling and endpoint security, but the payoff was immediate: our login flow now passes all compliance checks.
+  Late-night debugging sessions on cross-origin request issues made for dramatic hours.
+summaries:
+  - type: repo-summary
+    heading: Auth service chaos
+    body: OAuth2 PKCE became the week's obsession, requiring PRs in three repos. The opengrok sync PR alone touched 12 files
+      while removing 1,804 lines of legacy code.
+    chips:
+      - label: Repositories
+        value: opengrok, auth-service, oauth-provider
+        color: default
+      - label: PRs merged
+        value: "3"
+        color: green
+  - type: commit-summary
+    heading: Commit carnage
+    body: 42 total commits with a dramatic spike on deployment day. The Wednesday midnight push that shipped JWT sessions to
+      production stands out among the chaos.
+    chips:
+      - label: Peak commit day
+        value: "Wed: 2 commits"
+        color: green
+      - label: Total commits
+        value: "42"
+        color: blue
+  - type: collaboration-summary
+    heading: Solo review spree
+    body: Single-handedly reviewed 8 PRs before lunch after our teammate's vacation. Most were trivial, but the auth-related
+      ones required extra scrutiny.
+    chips:
+      - label: PRs reviewed
+        value: "8"
+        color: purple
+      - label: Review speed
+        value: 2.1 hrs
+        color: orange
+highlights:
+  - type: pr
+    title: Migrate to OAuth2 PKCE
+    repo: liuzhen9320/oauth-provider
+    meta: merged Apr 2 · +320 -45 · 12 files
+    body: The PR that finally got the PKCE flow working after 3 days of token dance. Security team approved it in record
+      time.
+  - type: release
+    title: v1.2.0
+    repo: liuzhen9320/auth-service
+    meta: released Apr 3
+    body: Shipped the PKCE implementation to production. The deployment script nearly killed me when it tried to overwrite
+      the database.
+ticker:
+  - label: ABSOLUTE CARNAGE
+    text: "@liuzhen9320 removes 1,804 lines of legacy auth code in single PR"
+  - label: NOT A DRILL
+    text: "@liuzhen9320 deploys JWT sessions to prod on a Wednesday. Bold move."
+  - label: EXPERTS BAFFLED
+    text: "@liuzhen9320 reviews 8 PRs before lunch. Coworkers reportedly stunned."
+  - label: DEVELOPING
+    text: "@liuzhen9320 pushes commits at an alarming rate. 42 this week alone."
+  - label: UNPRECEDENTED
+    text: "@liuzhen9320 migrates three repos to OAuth2 PKCE in historic sprint"
