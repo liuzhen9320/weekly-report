@@ -29,3 +29,10 @@
   payload:
     kind: generic
     action: started
+- id: "13825198524"
+  type: WatchEvent
+  repo: mjl-/gobuild
+  createdAt: 2026-08-25T12:07:51Z
+  payload:
+    kind: generic
+    action: started
