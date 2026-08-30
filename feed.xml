@@ -14,6 +14,24 @@
       <height>630</height>
     </image>
     <item>
+      <title>Massive sync PR lands in opengrok with 7k+ lines added</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W35/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W35/</guid>
+      <description>A single open PR reshapes the opengrok codebase with unprecedented scale
+
+这周的开发节奏集中在 liuzhen9320/opengrok 仓库，围绕一个名为 &quot;sync&quot; 的巨型 PR 展开。从 8 月 24 日启动的 PR 至今，已累计增删 7419 行代码，影响 125 个文件，堪称本周最显著的技术事件。虽然 PR 尚未合并，但其规模和深度已经彻底改变了这个仓库的开发格局。
+
+代码提交模式呈现明显的“爆发式”特点：周中几天几乎没有提交，直到周五（8 月 29 日）突然暴涨至 7 次提交，周六（8 月 30 日）继续保持高强度，累计 5 次提交。这种“集中爆发”式的开发节奏，反映出对同步功能实现的迫切需求。
+
+从技术角度看，这次 PR 代表了对 opengrok 核心功能的深度重构。7k 多行的新增代码意味着引入了大量新的同步逻辑，同时 1892 行的删减则净化了旧有代码结构。这种“量大质优”的改动，是本周最值得关注的技术亮点。
+
+
+Commits: 17, PRs: 1, Reviews: 0</description>
+      <pubDate>Sun, 30 Aug 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W35/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W35/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>OAuth2 PKCE lands in the auth service</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W34/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W34/</guid>

@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <title>OAuth2 PKCE lands in the auth service - 2026-08-17 - 2026-08-23</title>
+  <title>Massive sync PR lands in opengrok with 7k+ lines added - 2026-08-24 - 2026-08-30</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Migrated three repos to OAuth2 PKCE in a 48-hour sprint" />
+  <meta name="description" content="A single open PR reshapes the opengrok codebase with unprecedented scale" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <meta property="og:title" content="OAuth2 PKCE lands in the auth service" />
-  <meta property="og:description" content="Migrated three repos to OAuth2 PKCE in a 48-hour sprint" />
-  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W34/og.png" />
+  <meta property="og:title" content="Massive sync PR lands in opengrok with 7k+ lines added" />
+  <meta property="og:description" content="A single open PR reshapes the opengrok codebase with unprecedented scale" />
+  <meta property="og:image" content="https://liuzhen9320.github.io/weekly-report/2026/W35/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W34/" />
+  <meta property="og:url" content="https://liuzhen9320.github.io/weekly-report/2026/W35/" />
   <meta property="og:site_name" content="liuzhen9320 Weekly Reports" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="OAuth2 PKCE lands in the auth service" />
-  <meta name="twitter:description" content="Migrated three repos to OAuth2 PKCE in a 48-hour sprint" />
-  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W34/og.png" />
+  <meta name="twitter:title" content="Massive sync PR lands in opengrok with 7k+ lines added" />
+  <meta name="twitter:description" content="A single open PR reshapes the opengrok codebase with unprecedented scale" />
+  <meta name="twitter:image" content="https://liuzhen9320.github.io/weekly-report/2026/W35/og.png" />
   <meta name="author" content="liuzhen9320" />
   <meta name="theme-color" content="#050505" />
-  <meta property="article:published_time" content="2026-08-23" />
+  <meta property="article:published_time" content="2026-08-30" />
   <meta property="article:author" content="https://github.com/liuzhen9320" />
   <link rel="icon" href="https://avatars.githubusercontent.com/u/141824471?u&#x3D;f1500b9f42ba7e6bb0d4e20d7dda5e63e8037d1a&amp;v&#x3D;4" />
-  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W34/" />
+  <link rel="canonical" href="https://liuzhen9320.github.io/weekly-report/2026/W35/" />
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://liuzhen9320.github.io/weekly-report/feed.xml" />
   <meta name="view-transition" content="same-origin" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "OAuth2 PKCE lands in the auth service",
-    "description": "Migrated three repos to OAuth2 PKCE in a 48-hour sprint",
+    "headline": "Massive sync PR lands in opengrok with 7k+ lines added",
+    "description": "A single open PR reshapes the opengrok codebase with unprecedented scale",
     "author": {
       "@type": "Person",
       "name": "liuzhen9320",
       "url": "https://github.com/liuzhen9320"
     },
-    "image": "https://liuzhen9320.github.io/weekly-report/2026/W34/og.png",
-    "datePublished": "2026-08-23"
+    "image": "https://liuzhen9320.github.io/weekly-report/2026/W35/og.png",
+    "datePublished": "2026-08-30"
   }
   </script>
   <script type="application/ld+json">
@@ -48,7 +48,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://liuzhen9320.github.io/weekly-report/" },
-      { "@type": "ListItem", "position": 2, "name": "2026-08-17 - 2026-08-23", "item": "https://liuzhen9320.github.io/weekly-report/2026/W34/" }
+      { "@type": "ListItem", "position": 2, "name": "2026-08-24 - 2026-08-30", "item": "https://liuzhen9320.github.io/weekly-report/2026/W35/" }
     ]
   }
   </script>
@@ -597,30 +597,32 @@
         <span>liuzhen9320</span>
       </a>
       <span class="header-sep">&middot;</span>
-      <span class="header-date">2026-08-17 - 2026-08-23</span>
+      <span class="header-date">2026-08-24 - 2026-08-30</span>
     </div>
-    <h1 class="header-title">OAuth2 PKCE lands in the auth service</h1>
-    <p class="header-sub">Migrated three repos to OAuth2 PKCE in a 48-hour sprint</p>
+    <h1 class="header-title">Massive sync PR lands in opengrok with 7k+ lines added</h1>
+    <p class="header-sub">A single open PR reshapes the opengrok codebase with unprecedented scale</p>
   </div>
 </div>
 
 <main id="main-content">
 <article class="page">
   <div class="overview">
-    <p>This week was dominated by OAuth2 PKCE implementation across three critical repositories. The auth service became the central focus, with PRs landing in both internal and third-party systems. The work required deep dives into token handling and endpoint security, but the payoff was immediate: our login flow now passes all compliance checks. Late-night debugging sessions on cross-origin request issues made for dramatic hours.</p>
+    <p>这周的开发节奏集中在 liuzhen9320/opengrok 仓库，围绕一个名为 "sync" 的巨型 PR 展开。从 8 月 24 日启动的 PR 至今，已累计增删 7419 行代码，影响 125 个文件，堪称本周最显著的技术事件。虽然 PR 尚未合并，但其规模和深度已经彻底改变了这个仓库的开发格局。</p>
+  <p>代码提交模式呈现明显的“爆发式”特点：周中几天几乎没有提交，直到周五（8 月 29 日）突然暴涨至 7 次提交，周六（8 月 30 日）继续保持高强度，累计 5 次提交。这种“集中爆发”式的开发节奏，反映出对同步功能实现的迫切需求。</p>
+  <p>从技术角度看，这次 PR 代表了对 opengrok 核心功能的深度重构。7k 多行的新增代码意味着引入了大量新的同步逻辑，同时 1892 行的删减则净化了旧有代码结构。这种“量大质优”的改动，是本周最值得关注的技术亮点。</p>
   
   </div>
   <div class="section-group">
     <div class="section-group-header">
       <h2 class="section-group-title">摘要</h2>
       <div class="section-group-line"></div>
-      <span class="section-group-count">3 个部分</span>
+      <span class="section-group-count">4 个部分</span>
     </div>
   
     <div class="section-summary">
       <div class="section-type">repo-summary</div>
-      <div class="section-heading">Auth service chaos</div>
-      <div class="section-body">OAuth2 PKCE became the week's obsession, requiring PRs in three repos. The opengrok sync PR alone touched 12 files while removing 1,804 lines of legacy code.</div>
+      <div class="section-heading">opengrok 仓库主导式开发</div>
+      <div class="section-body">整个周度活跃集中于 liuzhen9320/opengrok 仓库，1 个开放的 PR 主导了全部开发工作。仓库内暂无 issue 活动，PR 规模异常庞大，单次变更文件数达 125 个。</div>
   
   
   
@@ -637,42 +639,92 @@
       </div>
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">Repositories</span> <span class="chip-value chip-default">opengrok, auth-service, oauth-provider</span></span>
-        <span class="chip"><span class="chip-label">PRs merged</span> <span class="chip-value chip-green">3</span></span>
+        <span class="chip"><span class="chip-label">liuzhen9320/opengrok</span> <span class="chip-value chip-default">1 PRs</span></span>
+        <span class="chip"><span class="chip-label">files-changed</span> <span class="chip-value chip-default">125 files</span></span>
+        <span class="chip"><span class="chip-label">lines-added</span> <span class="chip-value chip-green">+7419</span></span>
+        <span class="chip"><span class="chip-label">lines-removed</span> <span class="chip-value chip-red">-1892</span></span>
       </div>
     </div>
     <div class="section-summary">
       <div class="section-type">commit-summary</div>
-      <div class="section-heading">Commit carnage</div>
-      <div class="section-body">42 total commits with a dramatic spike on deployment day. The Wednesday midnight push that shipped JWT sessions to production stands out among the chaos.</div>
+      <div class="section-heading">爆发式提交模式</div>
+      <div class="section-body">开发节奏呈现明显的‘集中爆发’特征：周二（8 月 24 日）仅提交 2 次，后续四天基本清零，直到周五凌晨突然爆发 7 次提交，周末继续保持高强度输出。这种模式暗示项目处于关键功能实现的 bottleneck 阶段。</div>
   
   
       <div class="diff-bar">
-        <div class="diff-add" style="flex:7157"></div>
-        <div class="diff-del" style="flex:1804"></div>
+        <div class="diff-add" style="flex:7419"></div>
+        <div class="diff-del" style="flex:1892"></div>
       </div>
       <div class="diff-labels">
-        <span class="diff-label-add">+7,157</span>
-        <span class="diff-label-del">-1,804</span>
+        <span class="diff-label-add">+7,419</span>
+        <span class="diff-label-del">-1,892</span>
       </div>
   
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">Peak commit day</span> <span class="chip-value chip-green">Wed: 2 commits</span></span>
-        <span class="chip"><span class="chip-label">Total commits</span> <span class="chip-value chip-blue">42</span></span>
+        <span class="chip"><span class="chip-label">peak-day</span> <span class="chip-value chip-green">8/29 (7 commits)</span></span>
+        <span class="chip"><span class="chip-label">total-commits</span> <span class="chip-value chip-default">17 commits</span></span>
+        <span class="chip"><span class="chip-label">quiet-days</span> <span class="chip-value chip-gray">4 days</span></span>
+        <span class="chip"><span class="chip-label">weekend-intensity</span> <span class="chip-value chip-blue">12 commits (Sat+Sun)</span></span>
       </div>
     </div>
     <div class="section-summary">
-      <div class="section-type">collaboration-summary</div>
-      <div class="section-heading">Solo review spree</div>
-      <div class="section-body">Single-handedly reviewed 8 PRs before lunch after our teammate's vacation. Most were trivial, but the auth-related ones required extra scrutiny.</div>
+      <div class="section-type">deep-dive</div>
+      <div class="section-heading">sync PR 的技术规模</div>
+      <div class="section-body">单次 PR 的代码变更规模远超常规：新增 7419 行代码，删除 1892 行，影响 125 个文件。这不仅是功能同步的实现，更像是对 opengrok 架构的全面性重构。从提交模式看，这种规模的变更需要极其严谨的测试与验证。</div>
   
   
   
   
       <div class="data-chips">
-        <span class="chip"><span class="chip-label">PRs reviewed</span> <span class="chip-value chip-purple">8</span></span>
-        <span class="chip"><span class="chip-label">Review speed</span> <span class="chip-value chip-orange">2.1 hrs</span></span>
+        <span class="chip"><span class="chip-label">scale</span> <span class="chip-value chip-yellow">massive</span></span>
+        <span class="chip"><span class="chip-label">lines-added</span> <span class="chip-value chip-green">+7419</span></span>
+        <span class="chip"><span class="chip-label">lines-removed</span> <span class="chip-value chip-red">-1892</span></span>
+        <span class="chip"><span class="chip-label">files-impacted</span> <span class="chip-value chip-default">125 files</span></span>
+      </div>
+    </div>
+    <div class="section-summary">
+      <div class="section-type">activity-pattern</div>
+      <div class="section-heading">周中低谷周末爆发</div>
+      <div class="section-body">开发节奏呈现典型的‘周中低谷、周末爆发’模式：周二至周五仅提交 3 次，周六周日贡献占本周 88%（14 次）。这种反差格外显著，暗示项目处于关键节点，需要集中力量突破。</div>
+  
+      <div class="mini-heatmap">
+        <div class="mh-day">
+          <div class="mh-block mh-level-2">2</div>
+          <div class="mh-label">一</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-0">0</div>
+          <div class="mh-label">二</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-0">0</div>
+          <div class="mh-label">三</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-1">1</div>
+          <div class="mh-label">四</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-0">0</div>
+          <div class="mh-label">五</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-4">7</div>
+          <div class="mh-label">六</div>
+        </div>
+        <div class="mh-day">
+          <div class="mh-block mh-level-3">5</div>
+          <div class="mh-label">日</div>
+        </div>
+      </div>
+  
+  
+  
+      <div class="data-chips">
+        <span class="chip"><span class="chip-label">mid-week</span> <span class="chip-value chip-gray">3 commits</span></span>
+        <span class="chip"><span class="chip-label">weekend</span> <span class="chip-value chip-green">14 commits</span></span>
+        <span class="chip"><span class="chip-label">rest-days</span> <span class="chip-value chip-default">4 days</span></span>
       </div>
     </div>
   </div>
@@ -686,15 +738,15 @@
     <div class="highlight-grid">
     <div class="highlight-card">
       <span class="highlight-badge highlight-pr">pr</span>
-      <div class="highlight-title">Migrate to OAuth2 PKCE</div>
-      <div class="highlight-meta">liuzhen9320/oauth-provider · merged Apr 2 · +320 -45 · 12 files</div>
-      <div class="highlight-body">The PR that finally got the PKCE flow working after 3 days of token dance. Security team approved it in record time.</div>
+      <div class="highlight-title"><a href="https://github.com/liuzhen9320/opengrok/pull/1" target="_blank" rel="noopener nofollow">sync</a></div>
+      <div class="highlight-meta">liuzhen9320/opengrok · open · +7419 -1892 · 125 files</div>
+      <div class="highlight-body">本周唯一的 PR 以近千行的规模引发广泛关注，代表 opengrok 同步功能的重构里程碑。虽未合并，但其技术深度与广度已刷新仓库历史最纪录。</div>
     </div>
     <div class="highlight-card">
-      <span class="highlight-badge highlight-release">release</span>
-      <div class="highlight-title">v1.2.0</div>
-      <div class="highlight-meta">liuzhen9320/auth-service · released Apr 3</div>
-      <div class="highlight-body">Shipped the PKCE implementation to production. The deployment script nearly killed me when it tried to overwrite the database.</div>
+      <span class="highlight-badge highlight-pr">pr</span>
+      <div class="highlight-title"><a href="https://github.com/liuzhen9320/opengrok/pull/1" target="_blank" rel="noopener nofollow">sync</a></div>
+      <div class="highlight-meta">liuzhen9320/opengrok · open · +7419 -1892 · 125 files</div>
+      <div class="highlight-body">暴涨的行数变更在业内罕见，单次提交文件数达 125 个，意味着同步逻辑被彻底重构。这种规模的 PR 挑战了代码审查的常规流程。</div>
     </div>
     </div>
   </div>
@@ -703,15 +755,14 @@
 
 <div class="share-bar">
   <span class="share-label">分享</span>
-  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W34/&text=OAuth2%20PKCE%20lands%20in%20the%20auth%20service&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W34/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
-  <a href="https://bsky.app/intent/compose?text=OAuth2%20PKCE%20lands%20in%20the%20auth%20service%20https://liuzhen9320.github.io/weekly-report/2026/W34/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
+  <a href="https://x.com/intent/tweet?url=https://liuzhen9320.github.io/weekly-report/2026/W35/&text=Massive%20sync%20PR%20lands%20in%20opengrok%20with%207k%2B%20lines%20added&hashtags=GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-x" aria-label="Share on X">𝕏</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://liuzhen9320.github.io/weekly-report/2026/W35/" target="_blank" rel="noopener nofollow" class="share-btn share-linkedin" aria-label="Share on LinkedIn">in</a>
+  <a href="https://bsky.app/intent/compose?text=Massive%20sync%20PR%20lands%20in%20opengrok%20with%207k%2B%20lines%20added%20https://liuzhen9320.github.io/weekly-report/2026/W35/%20%23GHWeeklyReporter" target="_blank" rel="noopener nofollow" class="share-btn share-bsky" aria-label="Share on Bluesky">🦋</a>
 </div>
 
-
 <nav class="week-nav" aria-label="Week navigation">
-  <a href="../../2026/W33/" class="week-nav-link">&larr; 上一周</a>
-  <a href="../../2026/W35/" class="week-nav-link">下一周 &rarr;</a>
+  <a href="../../2026/W34/" class="week-nav-link">&larr; 上一周</a>
+  <span></span>
 </nav>
 
 
