@@ -14,6 +14,24 @@
       <height>630</height>
     </image>
     <item>
+      <title>opengrok 同步大爆发，126 个文件一夜归位</title>
+      <link>https://liuzhen9320.github.io/weekly-report/2026/W36/</link>
+      <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W36/</guid>
+      <description>单周 +7423/-1896 行，一个名为 sync 的 PR 撑起了整周工作量
+
+这一周整体偏安静，12 次提交、1 个 PR 开启、0 次 review——典型的「闷声做大」周。所有精力都灌进了 liuzhen9320/opengrok 的一个 sync PR 里，126 个文件、+7423/-1896 行，说是一次大规模同步也不为过。
+
+节奏上周一到周五分布比较散，周五峰值 3 次提交，周二直接摸鱼零提交。看起来像是在某个时间点把一堆分支一次性合进来，而不是日常迭代。
+
+没有 touching 任何 issue、没做 review，纯粹是把自己的仓库往最新状态怼。下一周如果能把这 PR 合并掉，就算真正完成了本周目标。
+
+
+Commits: 12, PRs: 1, Reviews: 0</description>
+      <pubDate>Sun, 06 Sep 2026 17:00:00 GMT</pubDate>
+      <enclosure url="https://liuzhen9320.github.io/weekly-report/2026/W36/og.png" type="image/png" length="0" />
+      <media:content url="https://liuzhen9320.github.io/weekly-report/2026/W36/og.png" medium="image" type="image/png" width="1200" height="630" />
+    </item>
+    <item>
       <title>Massive sync PR lands in opengrok with 7k+ lines added</title>
       <link>https://liuzhen9320.github.io/weekly-report/2026/W35/</link>
       <guid isPermaLink="true">https://liuzhen9320.github.io/weekly-report/2026/W35/</guid>
