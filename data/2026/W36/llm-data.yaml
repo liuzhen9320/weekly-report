@@ -1,0 +1,68 @@
+title: opengrok 同步大爆发，126 个文件一夜归位
+subtitle: 单周 +7423/-1896 行，一个名为 sync 的 PR 撑起了整周工作量
+overview: >
+  这一周整体偏安静，12 次提交、1 个 PR 开启、0 次 review——典型的「闷声做大」周。所有精力都灌进了 liuzhen9320/opengrok 的一个 sync PR 里，126 个文件、+7423/-1896
+  行，说是一次大规模同步也不为过。
+
+
+  节奏上周一到周五分布比较散，周五峰值 3 次提交，周二直接摸鱼零提交。看起来像是在某个时间点把一堆分支一次性合进来，而不是日常迭代。
+
+
+  没有 touching 任何 issue、没做 review，纯粹是把自己的仓库往最新状态怼。下一周如果能把这 PR 合并掉，就算真正完成了本周目标。
+summaries:
+  - type: repo-summary
+    heading: opengrok 独占全场
+    body: 本周所有活动集中在 liuzhen9320/opengrok，一个 sync PR 扛走了 +7423/-1896 行的变更。126 个文件被波及，同步规模相当可观。
+    chips:
+      - label: opengrok
+        value: 1 PR
+        color: default
+      - label: files touched
+        value: "126"
+        color: default
+      - label: lines
+        value: +7423 -1896
+        color: green
+  - type: commit-summary
+    heading: 提交集中在周五，周二彻底消失
+    body: 12 次提交分布不均：周一 1、周五 3 是高峰，周二直接 0 次。看起来是工作日攒着、周末补刀的类型。
+    chips:
+      - label: peak day
+        value: Fri 3
+        color: green
+      - label: zero day
+        value: Tue
+        color: red
+      - label: total
+        value: 12 commits
+        color: default
+  - type: activity-pattern
+    heading: 周末也来上班了
+    body: 周六周日各 1 次提交，说明 sync 这件事拖到了周末才收工。一周七天有五天在动，纯度不算低。
+    chips:
+      - label: active days
+        value: 5/7
+        color: green
+      - label: weekend
+        value: 2 commits
+        color: default
+highlights:
+  - type: pr
+    title: sync
+    repo: liuzhen9320/opengrok
+    meta: opened Aug 31 · +7423 -1896 · 126 files
+    body: 一个巨型同步 PR，126 个文件、近万行变更，是本周唯一也是最大的工作单元。还没合并，状态 open。
+    url: https://github.com/liuzhen9320/opengrok/pull/1
+ticker:
+  - label: MASS SYNC
+    text: "@liuzhen9320 single-handedly syncs 126 files in opengrok, adding 7,423 lines in one PR"
+  - label: TUESDAY VANISHED
+    text: "@liuzhen9320 commits literally nothing on Tuesday. Even the code took a day off."
+  - label: FRIDAY SURGE
+    text: "@liuzhen9320 drops 3 commits before the weekend, then vanishes until Sunday"
+  - label: NO REVIEWS
+    text: "@liuzhen9320 reviews zero PRs this week. Entirely consumed by own sync operation."
+  - label: STILL OPEN
+    text: "@liuzhen9320's 126-file sync PR remains unmerged. Coworkers awaiting merge with bated breath."
+  - label: ZERO ISSUES
+    text: "@liuzhen9320 opens and closes zero issues. Pure commit-only week, no bug tracking whatsoever."
