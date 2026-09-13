@@ -1,0 +1,89 @@
+title: opengrok 的 sync PR 一次牵动 133 个文件，净增 5559 行
+subtitle: 本周 6 次提交、1 个仍打开的 PR，工作几乎全部砸在 liuzhen9320/opengrok 的同步改动上。
+overview: |
+  这周的主线几乎只有一条：把 opengrok 的 sync 推成一个巨大的 open PR。它牵动 133 个文件，净增 5559 行，明显不是一次随手的小修补，而像把同步链路整个搬了一次家。
+
+  提交节奏不算爆炸，但很集中：全周 6 次提交，9 月 13 日以 2 次收尾；9 月 9 日和 11 日完全没提交。PR 状态一直是 open，0 次 review，所以我这周更像是在独自把一条很粗的代码管道推过去，而不是在协作收尾。
+
+  有趣的地方在于，工作量和可见的协作成果不成正比：改动很大，但合并、评审和 issue 都是零。接下来最值得看的不是再加多少行，而是这个 sync 能不能被拆开、解释清楚，然后真正合进去。
+summaries:
+  - type: deep-dive
+    heading: sync 的 133 文件级冲击
+    body: 我把 opengrok 的 sync 推成了一个 133 文件、+7529 -1970 的超大 PR，净增 5559 行。它看起来更像一次同步链路重构或批量刷新，而不只是修一个边界
+      bug。现在它仍开着，最大悬念也从“改了什么”变成了“怎么评审才不会把上下文淹没”。
+    chips:
+      - label: repo
+        value: liuzhen9320/opengrok
+        color: default
+      - label: files
+        value: 133 files
+        color: blue
+      - label: net change
+        value: 净增 +5559 行
+        color: green
+  - type: repo-summary
+    heading: opengrok 独占本周
+    body: 仓库活动只有 liuzhen9320/opengrok：1 个 PR、0 个 issue，没有别的 repo 分走注意力。这个 PR 就是 sync，规模占满了本周的代码改动。我的重心因此非常单一，几乎没有跨项目切换。
+    chips:
+      - label: active repo
+        value: liuzhen9320/opengrok
+        color: default
+      - label: PR
+        value: 1 open
+        color: yellow
+      - label: issues
+        value: "0"
+        color: default
+  - type: commit-summary
+    heading: 6 次提交，净增 5559 行
+    body: 本周共 6 次 commit，累计 +7529 -1970；虽然次数不多，但每次平均改动量相当夸张。没有可用的 commit message，所以我没法把每一步讲成完整的故事，只能从 PR 的整体规模判断这是一次集中式的大改动。
+    chips:
+      - label: commits
+        value: "6"
+        color: default
+      - label: added
+        value: "+7529"
+        color: green
+      - label: removed
+        value: "-1970"
+        color: red
+      - label: net
+        value: "+5559"
+        color: blue
+  - type: activity-pattern
+    heading: 五天动手，两天安静
+    body: 提交分布在 9 月 7、8、10、12、13 日，峰值是 9 月 13 日的 2 次。9 月 9 日和 11 日没有提交，整体不是连续冲刺，而是断断续续地把同一个 sync 往前推。因为 PR 没有
+      review，这周也看不出明显的协作回合。
+    chips:
+      - label: peak
+        value: 9月13日：2次
+        color: green
+      - label: active days
+        value: 5天
+        color: blue
+      - label: quiet days
+        value: 2天
+        color: default
+      - label: reviews
+        value: "0"
+        color: red
+highlights:
+  - type: pr
+    title: sync
+    repo: liuzhen9320/opengrok
+    meta: open · +7529 -1970 · 133 files
+    body: 这个 PR 是本周唯一明确的代码交付入口，改动覆盖 133 个文件。它还没有 merge，也没有收到 review，所以它的价值目前更像是一个等待被验证的同步方案，而不是一次已经落地的功能。
+    url: https://github.com/liuzhen9320/opengrok/pull/1
+ticker:
+  - label: SYNC BLITZ
+    text: "@liuzhen9320 在 opengrok 发起 sync PR，133 个文件集体卷入，代码变更规模当场失控"
+  - label: NET LINE RED
+    text: "@liuzhen9320 本周提交 6 次，净增 5559 行，仓库历史学家已经开始寻找镇静剂"
+  - label: DEVELOPING
+    text: "@liuzhen9320 的 sync PR 仍卡在 open 状态，+7529 -1970 的改动像一颗等待评审的炸弹"
+  - label: QUIET BURST
+    text: "@liuzhen9320 在 9 月 13 日单日提交 2 次，成为本周最安静的爆发点，同事们表示震惊"
+  - label: REPO HIBERNATION
+    text: "@liuzhen9320 本周只在 5 天留下提交记录，另外 2 天安静得像仓库进入了冬眠"
+  - label: REVIEW VOID
+    text: "@liuzhen9320 没有发起 review，也没有关闭 issue，整周火力全部押注在 opengrok 的 sync"
