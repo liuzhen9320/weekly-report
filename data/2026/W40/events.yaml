@@ -97,3 +97,10 @@
   payload:
     kind: generic
     action: started
+- id: "16095421294"
+  type: WatchEvent
+  repo: alecthomas/chroma
+  createdAt: 2026-09-30T11:49:52Z
+  payload:
+    kind: generic
+    action: started
